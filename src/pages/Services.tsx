@@ -1,4 +1,5 @@
 import { Home, Building, Utensils, Palette, Lightbulb, Hammer } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
@@ -9,62 +10,68 @@ import officeImage from '@/assets/office-design.jpg';
 const services = [
   {
     icon: Home,
-    title: 'Residential Interior Design',
-    description: 'Transform your home into a luxurious sanctuary with our comprehensive residential design services.',
+    title: 'Residential Interior Design & Renovation',
+    description: 'Creating personalized, comfortable homes tailored to lifestyle needs with comprehensive design and renovation services.',
     image: bedroomImage,
     features: [
       'Living Room & Bedroom Design',
       'Kitchen & Bathroom Planning',
       'Custom Furniture Selection',
       'Color & Material Consultation',
-      'Space Planning & Layout',
-      'Lighting Design',
+      'Space Planning & Layout Optimization',
+      'Lighting Design & Installation',
+      'Complete Home Renovation',
+      'Personalized Style Development',
     ],
     process: [
-      'Initial Consultation & Needs Assessment',
-      'Concept Development & Design Proposal',
+      'Home Assessment & Lifestyle Analysis',
+      'Personalized Design Concept Development',
       '3D Visualization & Material Selection',
-      'Project Management & Installation',
+      'Project Management & Quality Installation',
     ],
   },
   {
     icon: Building,
-    title: 'Commercial Interior Design',
-    description: 'Create inspiring work environments that reflect your brand and boost productivity.',
+    title: 'Commercial & Office Spaces',
+    description: 'Designing and building retail, F&B, and corporate environments that enhance brand presence and functionality.',
     image: officeImage,
     features: [
-      'Office Space Planning',
-      'Retail Store Design',
-      'Restaurant & Hospitality',
-      'Corporate Branding Integration',
+      'Office Space Planning & Design',
+      'Retail Store Layout & Branding',
+      'Restaurant & F&B Design',
+      'Corporate Identity Integration',
       'Ergonomic Workspace Solutions',
       'Sustainable Design Practices',
+      'Brand-Focused Environments',
+      'Functional Space Optimization',
     ],
     process: [
-      'Brand Analysis & Space Assessment',
-      'Strategic Design Planning',
+      'Brand Analysis & Business Requirements',
+      'Strategic Space Planning & Design',
       'Implementation & Project Coordination',
       'Final Installation & Quality Control',
     ],
   },
   {
     icon: Utensils,
-    title: 'Kitchen & Bathroom Renovation',
-    description: 'Design functional and beautiful kitchens and bathrooms that combine style with practicality.',
+    title: 'Renovation & Remodeling',
+    description: 'Transforming outdated properties into modern, efficient, and stylish spaces with comprehensive renovation solutions.',
     image: kitchenImage,
     features: [
-      'Custom Cabinetry Design',
-      'Premium Material Selection',
-      'Modern Appliance Integration',
-      'Smart Storage Solutions',
-      'Plumbing & Electrical Planning',
-      'Luxury Fixture Installation',
+      'Complete Property Renovation',
+      'Kitchen & Bathroom Remodeling',
+      'Structural Modifications',
+      'Modern Systems Integration',
+      'Energy Efficiency Upgrades',
+      'Smart Home Technology',
+      'Luxury Material Upgrades',
+      'Space Reconfiguration',
     ],
     process: [
-      'Space Analysis & Functional Planning',
-      'Design Development & Material Selection',
-      'Construction Management',
-      'Final Installation & Testing',
+      'Property Assessment & Structural Analysis',
+      'Renovation Planning & Design Development',
+      'Construction Management & Coordination',
+      'Final Inspection & Handover',
     ],
   },
 ];
@@ -72,18 +79,18 @@ const services = [
 const additionalServices = [
   {
     icon: Palette,
-    title: 'Color Consultation',
-    description: 'Expert color advice to create the perfect atmosphere for your space.',
+    title: 'Customized Design Solutions',
+    description: 'Offering tailor-made concepts based on each client\'s vision, style, and budget with personalized attention.',
   },
   {
     icon: Lightbulb,
-    title: 'Lighting Design',
-    description: 'Comprehensive lighting solutions to enhance ambiance and functionality.',
+    title: 'Integrated Design & Build',
+    description: 'Our unique approach combines creative design with professional construction for seamless project delivery.',
   },
   {
     icon: Hammer,
-    title: 'Custom Furniture',
-    description: 'Bespoke furniture pieces designed and crafted specifically for your space.',
+    title: 'Quality & Project Management',
+    description: 'Strict attention to quality control, cost management, and on-time delivery for complete peace of mind.',
   },
 ];
 
@@ -98,10 +105,19 @@ const Services = () => {
               <h1 className="text-5xl md:text-6xl font-bold text-luxury-charcoal mb-6">
                 Our Services
               </h1>
-              <p className="text-xl text-luxury-silver leading-relaxed">
+              <p className="text-xl text-luxury-silver leading-relaxed mb-8">
                 From concept to completion, we offer comprehensive interior design and build services 
                 that transform your vision into reality with exceptional craftsmanship and attention to detail.
               </p>
+              <div className="bg-primary/10 rounded-xl p-6 text-left">
+                <h3 className="text-2xl font-bold text-luxury-charcoal mb-4">What Sets AWA Apart</h3>
+                <p className="text-luxury-silver leading-relaxed mb-4">
+                  Our integrated approach combines both creative design and professional construction. Unlike firms that focus only on design or only on renovation, we bring both disciplines together, ensuring that ideas are transformed into reality seamlessly.
+                </p>
+                <p className="text-luxury-silver leading-relaxed">
+                  With strict attention to quality control, cost management, and on-time delivery, we provide our clients with confidence and peace of mind throughout every project. We remain committed to our philosophy of <span className="text-primary font-semibold">Art • Workmanship • Architecture</span>.
+                </p>
+              </div>
             </div>
           </ScrollAnimation>
         </div>
@@ -223,9 +239,9 @@ const Services = () => {
               <button className="btn-primary px-8 py-4 rounded-lg text-lg font-medium">
                 Get Free Consultation
               </button>
-              <button className="border border-white text-white hover:bg-white hover:text-luxury-charcoal px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300">
+              <Button size="lg" variant="outline-white" className="text-lg px-8 py-6">
                 View Our Work
-              </button>
+              </Button>
             </div>
           </ScrollAnimation>
         </div>
