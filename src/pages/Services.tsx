@@ -189,6 +189,95 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Service Procedure */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <ScrollAnimation>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-luxury-charcoal mb-6">
+                Our Design & Build Process
+              </h2>
+              <p className="text-xl text-luxury-silver max-w-2xl mx-auto">
+                We follow a proven, step-by-step methodology to ensure every project is completed 
+                to the highest standards, on time and within budget.
+              </p>
+            </div>
+          </ScrollAnimation>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                {
+                  step: 1,
+                  title: 'Proposal',
+                  description: 'Prepare concept mood board and estimate construction and architecture costing',
+                },
+                {
+                  step: 2,
+                  title: 'Site Measurement',
+                  description: 'Accurate measurement of your space to ensure precise planning and execution',
+                },
+                {
+                  step: 3,
+                  title: 'Schematic Design',
+                  description: '2D floor plan, furniture layout plan and detailed 3D perspective visualization',
+                },
+                {
+                  step: 4,
+                  title: '3D Amendment & Detailing',
+                  description: 'Refine 3D designs and discuss all details until you\'re completely satisfied',
+                },
+                {
+                  step: 5,
+                  title: 'Construction Drawing',
+                  description: 'Designer creates comprehensive construction drawings and reviews with owner',
+                },
+                {
+                  step: 6,
+                  title: 'Confirmation & Deposit',
+                  description: 'Owner initials all construction drawings for final approval and makes deposit for construction',
+                },
+                {
+                  step: 7,
+                  title: 'Construction Phase',
+                  description: 'Construction begins with designer conducting regular site checking and quality control',
+                },
+                {
+                  step: 8,
+                  title: 'Final Touches',
+                  description: 'Carpentry design proposal, lighting fitting selection, curtain & blind installation, and decorative items placement',
+                },
+                {
+                  step: 9,
+                  title: 'Handover',
+                  description: 'Final inspection and handover to owner with complete documentation and warranty',
+                },
+              ].map((item, index) => (
+                <ScrollAnimation key={index} delay={index * 100}>
+                  <Card className="luxury-card hover:shadow-xl transition-shadow duration-300">
+                    <CardContent className="p-6">
+                      <div className="flex items-start">
+                        <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                          <span className="text-2xl font-bold text-primary">{item.step}</span>
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-luxury-charcoal mb-2">
+                            {item.title}
+                          </h3>
+                          <p className="text-luxury-silver leading-relaxed">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </ScrollAnimation>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Additional Services */}
       <section className="py-24 bg-luxury-cream">
         <div className="container mx-auto px-4">
