@@ -76,89 +76,125 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        {/* Burger Menu */}
+        {/* Burger Menu - Right Sidebar */}
         {isMenuOpen && (
-          <div className="fixed inset-0 top-20 z-40 bg-black/50 backdrop-blur-sm animate-fade-in">
-            <div className="bg-background/98 backdrop-blur-md shadow-2xl max-w-md mx-auto rounded-b-3xl overflow-hidden animate-slide-in-top">
+          <div 
+            className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm animate-fade-in"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <div 
+              className="fixed top-0 right-0 h-full w-80 sm:w-96 bg-background shadow-2xl animate-slide-in-right overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Header */}
+              <div className="sticky top-0 bg-gradient-to-b from-primary to-primary-dark p-6 z-10">
+                <div className="flex items-center justify-between mb-4">
+                  <h2 className="text-2xl font-bold text-white">Menu</h2>
+                  <button
+                    onClick={() => setIsMenuOpen(false)}
+                    className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors duration-200"
+                  >
+                    <X className="w-5 h-5 text-white" />
+                  </button>
+                </div>
+                <p className="text-white/80 text-sm">Transforming spaces into luxury</p>
+              </div>
+
+              {/* Navigation Items */}
+              <nav className="px-6 py-8 space-y-2">
+                {navigationItems.map((item, index) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className={`group flex items-center justify-between px-5 py-4 rounded-xl transition-all duration-300 ${
+                      location.pathname === item.href
+                        ? 'bg-primary text-white shadow-lg'
+                        : 'text-luxury-charcoal hover:bg-luxury-cream hover:pl-7'
+                    }`}
+                    style={{ 
+                      animationDelay: `${index * 50}ms`,
+                      animation: 'slide-in-right 0.3s ease-out forwards'
+                    }}
+                  >
+                    <span className="text-base font-semibold">{item.name}</span>
+                    <div className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      location.pathname === item.href
+                        ? 'bg-white'
+                        : 'bg-primary opacity-0 group-hover:opacity-100'
+                    }`}></div>
+                  </Link>
+                ))}
+              </nav>
+
+              {/* Divider with gradient */}
+              <div className="mx-6 h-px bg-gradient-to-r from-transparent via-luxury-silver/30 to-transparent"></div>
+
+              {/* Contact Section */}
               <div className="px-6 py-8">
-                {/* Navigation Items */}
-                <nav className="space-y-1 mb-8">
-                  {navigationItems.map((item, index) => (
-                    <Link
-                      key={item.name}
-                      to={item.href}
-                      className={`group flex items-center justify-between px-4 py-4 rounded-xl transition-all duration-300 ${
-                        location.pathname === item.href
-                          ? 'bg-primary/10 text-primary'
-                          : 'text-luxury-charcoal hover:bg-luxury-cream hover:text-primary'
-                      }`}
-                      style={{ animationDelay: `${index * 50}ms` }}
-                    >
-                      <span className="text-lg font-semibold">{item.name}</span>
-                      <div className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        location.pathname === item.href
-                          ? 'bg-primary scale-100'
-                          : 'bg-transparent scale-0 group-hover:bg-primary group-hover:scale-100'
-                      }`}></div>
-                    </Link>
-                  ))}
-                </nav>
-
-                {/* Divider */}
-                <div className="h-px bg-gradient-to-r from-transparent via-luxury-silver/30 to-transparent mb-6"></div>
-
-                {/* Contact Information */}
-                <div className="space-y-4">
-                  <h3 className="text-sm font-semibold text-luxury-charcoal/60 uppercase tracking-wider mb-3">
-                    Contact Us
-                  </h3>
-                  
+                <h3 className="text-xs font-bold text-luxury-charcoal/60 uppercase tracking-wider mb-4 px-2">
+                  Get In Touch
+                </h3>
+                
+                <div className="space-y-3">
                   <a 
                     href="tel:+60179551698"
-                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-luxury-cream transition-colors duration-200 group"
+                    className="flex items-center space-x-4 p-4 rounded-xl hover:bg-primary/5 transition-all duration-200 group border border-transparent hover:border-primary/20"
                   >
-                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-200">
-                      <Phone className="w-5 h-5 text-primary" />
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-200">
+                      <Phone className="w-5 h-5 text-primary group-hover:text-white" />
                     </div>
-                    <div className="flex flex-col">
-                      <span className="text-sm text-luxury-silver/70">Call Us</span>
-                      <span className="text-luxury-charcoal font-medium">017-9551698</span>
+                    <div className="flex flex-col flex-1">
+                      <span className="text-xs text-luxury-silver/70 font-medium">Phone</span>
+                      <span className="text-luxury-charcoal font-semibold">017-9551698</span>
+                    </div>
+                  </a>
+
+                  <a 
+                    href="tel:+60176388993"
+                    className="flex items-center space-x-4 p-4 rounded-xl hover:bg-primary/5 transition-all duration-200 group border border-transparent hover:border-primary/20"
+                  >
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-200">
+                      <Phone className="w-5 h-5 text-primary group-hover:text-white" />
+                    </div>
+                    <div className="flex flex-col flex-1">
+                      <span className="text-xs text-luxury-silver/70 font-medium">Phone</span>
+                      <span className="text-luxury-charcoal font-semibold">017-6388993</span>
                     </div>
                   </a>
 
                   <a 
                     href="mailto:info@awadesign.com"
-                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-luxury-cream transition-colors duration-200 group"
+                    className="flex items-center space-x-4 p-4 rounded-xl hover:bg-primary/5 transition-all duration-200 group border border-transparent hover:border-primary/20"
                   >
-                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-200">
-                      <Mail className="w-5 h-5 text-primary" />
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-200">
+                      <Mail className="w-5 h-5 text-primary group-hover:text-white" />
                     </div>
-                    <div className="flex flex-col">
-                      <span className="text-sm text-luxury-silver/70">Email Us</span>
-                      <span className="text-luxury-charcoal font-medium">info@awadesign.com</span>
+                    <div className="flex flex-col flex-1">
+                      <span className="text-xs text-luxury-silver/70 font-medium">Email</span>
+                      <span className="text-luxury-charcoal font-semibold text-sm">info@awadesign.com</span>
                     </div>
                   </a>
 
-                  <div className="flex items-center space-x-3 p-3 rounded-lg">
-                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                  <div className="flex items-center space-x-4 p-4 rounded-xl bg-luxury-cream/50">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
-                    <div className="flex flex-col">
-                      <span className="text-sm text-luxury-silver/70">Visit Us</span>
-                      <span className="text-luxury-charcoal font-medium text-sm">Petaling Jaya, Selangor</span>
+                    <div className="flex flex-col flex-1">
+                      <span className="text-xs text-luxury-silver/70 font-medium">Location</span>
+                      <span className="text-luxury-charcoal font-semibold text-sm">Petaling Jaya</span>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                {/* CTA Button */}
-                <div className="mt-8">
-                  <Link
-                    to="/contact"
-                    className="block w-full text-center btn-primary py-4 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-                  >
-                    Get Free Consultation
-                  </Link>
-                </div>
+              {/* CTA Section */}
+              <div className="px-6 pb-8">
+                <Link
+                  to="/contact"
+                  className="block w-full text-center bg-gradient-to-r from-primary to-primary-dark text-white py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                >
+                  Get Free Consultation
+                </Link>
               </div>
             </div>
           </div>
