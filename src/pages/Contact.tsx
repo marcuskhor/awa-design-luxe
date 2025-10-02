@@ -324,6 +324,58 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Google Map Location */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <ScrollAnimation>
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-luxury-charcoal mb-6">
+                Find Us Here
+              </h2>
+              <p className="text-xl text-luxury-silver max-w-2xl mx-auto mb-4">
+                Visit us at our office in Petaling Jaya, Selangor. We're easily accessible and ready to welcome you.
+              </p>
+              <div className="flex items-center justify-center text-luxury-silver mb-2">
+                <MapPin className="w-5 h-5 text-primary mr-2" />
+                <p className="font-medium">
+                  D 3-2, Pusat Komersial Parklane, Jalan SS 7/26, 47301 Petaling Jaya, Selangor
+                </p>
+              </div>
+            </div>
+          </ScrollAnimation>
+
+          <ScrollAnimation delay={200}>
+            <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9347773775596!2d101.59498731533!3d3.0666667974789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c1f8f8f8f8f%3A0x8f8f8f8f8f8f8f8f!2sPusat%20Komersial%20Parklane!5e0!3m2!1sen!2smy!4v1234567890"
+                width="100%"
+                height="500"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="AWA Design & Build Location"
+                className="w-full"
+              ></iframe>
+            </div>
+          </ScrollAnimation>
+
+          <ScrollAnimation delay={300}>
+            <div className="mt-8 text-center">
+              <a
+                href="https://share.google/ksP9B2oXLk2VYED6e"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center btn-primary px-8 py-4 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <MapPin className="w-5 h-5 mr-2" />
+                Open in Google Maps
+              </a>
+            </div>
+          </ScrollAnimation>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
