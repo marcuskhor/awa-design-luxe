@@ -197,8 +197,44 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Service Procedure */}
+      {/* Additional Services */}
       <section className="py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <ScrollAnimation>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-luxury-charcoal mb-6">
+                Additional Specialized Services
+              </h2>
+              <p className="text-xl text-luxury-silver max-w-2xl mx-auto">
+                Complement your main project with our specialized services designed to perfect every detail.
+              </p>
+            </div>
+          </ScrollAnimation>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {additionalServices.map((service, index) => (
+              <ScrollAnimation key={index} delay={index * 150}>
+                <Card className="luxury-card text-center h-full">
+                  <CardContent className="p-8">
+                    <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <service.icon className="w-10 h-10 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-luxury-charcoal mb-4">
+                      {service.title}
+                    </h3>
+                    <p className="text-luxury-silver leading-relaxed">
+                      {service.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </ScrollAnimation>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service Procedure */}
+      <section className="py-24 bg-luxury-cream">
         <div className="container mx-auto px-4">
           <ScrollAnimation>
             <div className="text-center mb-16">
@@ -282,42 +318,6 @@ const Services = () => {
                 </ScrollAnimation>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Additional Services */}
-      <section className="py-24 bg-luxury-cream">
-        <div className="container mx-auto px-4">
-          <ScrollAnimation>
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-luxury-charcoal mb-6">
-                Additional Specialized Services
-              </h2>
-              <p className="text-xl text-luxury-silver max-w-2xl mx-auto">
-                Complement your main project with our specialized services designed to perfect every detail.
-              </p>
-            </div>
-          </ScrollAnimation>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {additionalServices.map((service, index) => (
-              <ScrollAnimation key={index} delay={index * 150}>
-                <Card className="luxury-card text-center h-full">
-                  <CardContent className="p-8">
-                    <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <service.icon className="w-10 h-10 text-primary" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-luxury-charcoal mb-4">
-                      {service.title}
-                    </h3>
-                    <p className="text-luxury-silver leading-relaxed">
-                      {service.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </ScrollAnimation>
-            ))}
           </div>
         </div>
       </section>
