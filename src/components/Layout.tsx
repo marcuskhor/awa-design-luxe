@@ -69,16 +69,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 variant="ghost"
                 size="icon"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className={`${
-                  !isScrolled 
-                    ? 'bg-white/90 hover:bg-white shadow-lg' 
-                    : 'hover:bg-accent'
-                }`}
+                className="bg-primary hover:bg-primary-dark shadow-md z-50"
               >
                 {isMenuOpen ? (
-                  <X className="w-6 h-6 text-luxury-charcoal" />
+                  <X className="w-6 h-6 text-white" />
                 ) : (
-                  <Menu className="w-6 h-6 text-luxury-charcoal" />
+                  <Menu className="w-6 h-6 text-white" />
                 )}
               </Button>
             </div>
