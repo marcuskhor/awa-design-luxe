@@ -347,7 +347,7 @@ const Contact = () => {
           <ScrollAnimation delay={200}>
             <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9347773775596!2d101.59498731533!3d3.0666667974789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c1f8f8f8f8f%3A0x8f8f8f8f8f8f8f8f!2sPusat%20Komersial%20Parklane!5e0!3m2!1sen!2smy!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9347773775596!2d101.59498731533!3d3.0666667974789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0xcd3740df5a3bf999!2sAWA+DESIGN+AND+BUILD+SDN+BHD!5e0!3m2!1sen!2smy!4v1234567890"
                 width="100%"
                 height="500"
                 style={{ border: 0 }}
@@ -363,7 +363,7 @@ const Contact = () => {
           <ScrollAnimation delay={300}>
             <div className="mt-8 text-center">
               <a
-                href="https://share.google/ksP9B2oXLk2VYED6e"
+                href="https://www.google.com/maps/place/AWA+DESIGN+AND+BUILD+SDN+BHD/data=!4m2!3m1!1s0x0:0xcd3740df5a3bf999?sa=X&ved=1t:2428&ictx=111"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center btn-primary px-8 py-4 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
