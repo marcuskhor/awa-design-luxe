@@ -6,6 +6,7 @@ import ScrollAnimation from '@/components/ScrollAnimation';
 import kitchenImage from '@/assets/kitchen-design.jpg';
 import bedroomImage from '@/assets/bedroom-design.jpg';
 import officeImage from '@/assets/office-design.jpg';
+import servicesHero from '@/assets/services-hero.jpg';
 
 const services = [
   {
@@ -98,18 +99,25 @@ const Services = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-luxury-cream">
-        <div className="container mx-auto px-4">
+      <section className="relative min-h-[85vh] flex items-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${servicesHero})` }}
+        >
+          <div className="absolute inset-0 bg-luxury-charcoal/70"></div>
+        </div>
+        
+        <div className="relative z-10 container mx-auto px-4 py-20">
           <ScrollAnimation>
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="text-5xl md:text-6xl font-bold text-luxury-charcoal mb-6">
+              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
                 Our Services
               </h1>
-              <p className="text-xl text-luxury-silver leading-relaxed mb-8">
+              <p className="text-xl text-white/90 leading-relaxed mb-8">
                 From concept to completion, we offer comprehensive interior design and build services 
                 that transform your vision into reality with exceptional craftsmanship and attention to detail.
               </p>
-              <div className="bg-primary/10 rounded-xl p-6 text-left">
+              <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 text-left shadow-2xl">
                 <h3 className="text-2xl font-bold text-luxury-charcoal mb-4">What Sets AWA Apart</h3>
                 <p className="text-luxury-silver leading-relaxed mb-4">
                   Our integrated approach combines both creative design and professional construction. Unlike firms that focus only on design or only on renovation, we bring both disciplines together, ensuring that ideas are transformed into reality seamlessly.
