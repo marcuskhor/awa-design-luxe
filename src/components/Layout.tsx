@@ -54,22 +54,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
             </div>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
-              {navigationItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`text-sm font-medium transition-colors duration-200 ${
-                    location.pathname === item.href
-                      ? 'text-primary'
-                      : 'text-luxury-charcoal hover:text-primary'
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+            {/* Navigation hidden - burger menu only */}
 
             {/* Contact Info & Mobile Menu */}
             <div className="flex items-center space-x-4">
@@ -83,7 +68,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Button
                 variant="ghost"
                 size="icon"
-                className="lg:hidden"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -92,9 +76,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Burger Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-background/95 backdrop-blur-md border-t">
+          <div className="bg-background/95 backdrop-blur-md border-t">
             <div className="container mx-auto px-4 py-4">
               <div className="flex flex-col space-y-4">
                 {navigationItems.map((item) => (
