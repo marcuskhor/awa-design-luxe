@@ -58,13 +58,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
             {/* Contact Info & Mobile Menu */}
             <div className="flex items-center space-x-4 flex-shrink-0">
-              <div className="hidden xl:flex items-center space-x-4 text-sm">
-                <div className="flex items-center space-x-2 text-luxury-silver">
-                  <Phone className="w-4 h-4" />
-                  <span>017-9551698</span>
-                </div>
-              </div>
-              
               {!isMenuOpen && (
                 <Button
                   variant="ghost"
