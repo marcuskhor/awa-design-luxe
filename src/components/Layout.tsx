@@ -39,8 +39,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             : 'bg-transparent'
         }`}
       >
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between min-h-[72px]">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-20 py-3">
             {/* Logo Space */}
             <div className="flex items-center space-x-4 flex-shrink-0">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center border-2 border-dashed border-primary/30 flex-shrink-0">
@@ -57,7 +57,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {/* Navigation hidden - burger menu only */}
 
             {/* Contact Info & Mobile Menu */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 flex-shrink-0">
               <div className="hidden xl:flex items-center space-x-4 text-sm">
                 <div className="flex items-center space-x-2 text-luxury-silver">
                   <Phone className="w-4 h-4" />
@@ -70,7 +70,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   variant="ghost"
                   size="icon"
                   onClick={() => setIsMenuOpen(true)}
-                  className="bg-primary hover:bg-primary-dark shadow-md relative z-[60]"
+                  className="bg-primary hover:bg-primary-dark shadow-lg relative z-[60] w-12 h-12 flex-shrink-0"
                 >
                   <Menu className="w-6 h-6 text-white" />
                 </Button>
