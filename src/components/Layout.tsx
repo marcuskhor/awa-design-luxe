@@ -40,17 +40,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         }`}
       >
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-20 min-h-[80px]">
             {/* Logo Space */}
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center border-2 border-dashed border-primary/30">
+            <div className="flex items-center space-x-4 flex-shrink-0">
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center border-2 border-dashed border-primary/30 flex-shrink-0">
                 <span className="text-xs text-primary font-medium">LOGO</span>
               </div>
-              <div className="hidden md:block">
-                <h1 className="text-xl font-bold text-luxury-charcoal">
+              <div className="hidden md:block flex-shrink-0">
+                <h1 className="text-xl font-bold text-luxury-charcoal whitespace-nowrap">
                   AWA DESIGN & BUILD
                 </h1>
-                <p className="text-sm text-luxury-silver">SDN BHD</p>
+                <p className="text-sm text-luxury-silver whitespace-nowrap">SDN BHD</p>
               </div>
             </div>
 
