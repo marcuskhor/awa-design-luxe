@@ -65,14 +65,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </div>
               </div>
               
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="bg-primary hover:bg-primary-dark shadow-md relative z-[60]"
-              >
-                <Menu className="w-6 h-6 text-white" />
-              </Button>
+              {!isMenuOpen && (
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setIsMenuOpen(true)}
+                  className="bg-primary hover:bg-primary-dark shadow-md relative z-[60]"
+                >
+                  <Menu className="w-6 h-6 text-white" />
+                </Button>
+              )}
             </div>
           </div>
         </div>
