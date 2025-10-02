@@ -70,7 +70,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   variant="ghost"
                   size="icon"
                   onClick={() => setIsMenuOpen(true)}
-                  className="bg-primary hover:bg-primary-dark shadow-lg relative z-[60] w-12 h-12 flex-shrink-0"
+                  className="fixed top-5 right-4 bg-primary hover:bg-primary-dark shadow-lg z-[60] w-12 h-12"
                 >
                   <Menu className="w-6 h-6 text-white" />
                 </Button>
