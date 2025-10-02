@@ -78,33 +78,86 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         {/* Burger Menu */}
         {isMenuOpen && (
-          <div className="bg-background/95 backdrop-blur-md border-t">
-            <div className="container mx-auto px-4 py-4">
-              <div className="flex flex-col space-y-4">
-                {navigationItems.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className={`text-base font-medium transition-colors duration-200 ${
-                      location.pathname === item.href
-                        ? 'text-primary'
-                        : 'text-luxury-charcoal hover:text-primary'
-                    }`}
+          <div className="fixed inset-0 top-20 z-40 bg-black/50 backdrop-blur-sm animate-fade-in">
+            <div className="bg-background/98 backdrop-blur-md shadow-2xl max-w-md mx-auto rounded-b-3xl overflow-hidden animate-slide-in-top">
+              <div className="px-6 py-8">
+                {/* Navigation Items */}
+                <nav className="space-y-1 mb-8">
+                  {navigationItems.map((item, index) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className={`group flex items-center justify-between px-4 py-4 rounded-xl transition-all duration-300 ${
+                        location.pathname === item.href
+                          ? 'bg-primary/10 text-primary'
+                          : 'text-luxury-charcoal hover:bg-luxury-cream hover:text-primary'
+                      }`}
+                      style={{ animationDelay: `${index * 50}ms` }}
+                    >
+                      <span className="text-lg font-semibold">{item.name}</span>
+                      <div className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        location.pathname === item.href
+                          ? 'bg-primary scale-100'
+                          : 'bg-transparent scale-0 group-hover:bg-primary group-hover:scale-100'
+                      }`}></div>
+                    </Link>
+                  ))}
+                </nav>
+
+                {/* Divider */}
+                <div className="h-px bg-gradient-to-r from-transparent via-luxury-silver/30 to-transparent mb-6"></div>
+
+                {/* Contact Information */}
+                <div className="space-y-4">
+                  <h3 className="text-sm font-semibold text-luxury-charcoal/60 uppercase tracking-wider mb-3">
+                    Contact Us
+                  </h3>
+                  
+                  <a 
+                    href="tel:+60179551698"
+                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-luxury-cream transition-colors duration-200 group"
                   >
-                    {item.name}
-                  </Link>
-                ))}
-                <div className="pt-4 border-t">
-                  <div className="flex flex-col space-y-2 text-sm text-luxury-silver">
-                    <div className="flex items-center space-x-2">
-                      <Phone className="w-4 h-4" />
-                      <span>017-9551698 / 017-6388993</span>
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-200">
+                      <Phone className="w-5 h-5 text-primary" />
                     </div>
-                    <div className="flex items-center space-x-2">
-                      <Mail className="w-4 h-4" />
-                      <span>info@awadesign.com</span>
+                    <div className="flex flex-col">
+                      <span className="text-sm text-luxury-silver/70">Call Us</span>
+                      <span className="text-luxury-charcoal font-medium">017-9551698</span>
+                    </div>
+                  </a>
+
+                  <a 
+                    href="mailto:info@awadesign.com"
+                    className="flex items-center space-x-3 p-3 rounded-lg hover:bg-luxury-cream transition-colors duration-200 group"
+                  >
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-200">
+                      <Mail className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-sm text-luxury-silver/70">Email Us</span>
+                      <span className="text-luxury-charcoal font-medium">info@awadesign.com</span>
+                    </div>
+                  </a>
+
+                  <div className="flex items-center space-x-3 p-3 rounded-lg">
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                      <MapPin className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-sm text-luxury-silver/70">Visit Us</span>
+                      <span className="text-luxury-charcoal font-medium text-sm">Petaling Jaya, Selangor</span>
                     </div>
                   </div>
+                </div>
+
+                {/* CTA Button */}
+                <div className="mt-8">
+                  <Link
+                    to="/contact"
+                    className="block w-full text-center btn-primary py-4 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    Get Free Consultation
+                  </Link>
                 </div>
               </div>
             </div>
