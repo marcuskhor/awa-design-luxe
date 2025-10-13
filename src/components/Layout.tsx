@@ -58,19 +58,22 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
             {/* Contact Info & Mobile Menu */}
             <div className="flex items-center space-x-4 flex-shrink-0">
-              {!isMenuOpen && (
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => setIsMenuOpen(true)}
-                  className="fixed top-5 right-4 bg-primary hover:bg-primary-dark shadow-lg z-[60] w-12 h-12"
-                >
-                  <Menu className="w-6 h-6 text-white" />
-                </Button>
-              )}
+              {/* Spacer for burger button */}
             </div>
           </div>
         </div>
+
+        {/* Burger Button - Fixed Position */}
+        {!isMenuOpen && (
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsMenuOpen(true)}
+            className="fixed top-5 right-4 bg-primary hover:bg-primary-dark shadow-lg z-[100] w-12 h-12 pointer-events-auto"
+          >
+            <Menu className="w-6 h-6 text-white" />
+          </Button>
+        )}
 
         {/* Burger Menu - Right Sidebar */}
         {isMenuOpen && (
