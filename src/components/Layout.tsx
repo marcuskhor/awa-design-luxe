@@ -75,13 +75,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Burger Menu - Right Sidebar */}
       {isMenuOpen && (
         <div 
-          className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm animate-fade-in"
+          className="fixed inset-0 z-[110] bg-black/50 backdrop-blur-sm animate-fade-in"
           onClick={() => setIsMenuOpen(false)}
         >
-            <div 
-              className="fixed top-0 right-0 h-full w-80 sm:w-96 bg-background shadow-2xl animate-slide-in-right overflow-y-auto"
-              onClick={(e) => e.stopPropagation()}
-            >
+          <div 
+            className="fixed top-0 right-0 h-full w-80 sm:w-96 bg-background shadow-2xl animate-slide-in-right overflow-y-auto z-[110]"
+            onClick={(e) => e.stopPropagation()}
+          >
               {/* Header */}
               <div className="sticky top-0 bg-gradient-to-b from-primary to-primary-dark p-6 z-10">
                 <div className="flex items-center justify-between mb-4">
