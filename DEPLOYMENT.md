@@ -1,4 +1,4 @@
-# Deployment Guide
+# Deployment Guide for marcuskhor.github.io
 
 ## GitHub Pages Deployment
 
@@ -6,33 +6,29 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 
 ### Setup Steps
 
-1. **Connect to GitHub** (if not already connected):
-   - Click the GitHub button in the Lovable editor
+1. **Connect to GitHub**:
+   - Click the **GitHub** button in the top right of the Lovable editor
    - Authorize the Lovable GitHub App
-   - Create or connect to a repository
+   - When prompted, create a new repository named: **marcuskhor.github.io**
+   - Important: The repository name MUST be exactly `marcuskhor.github.io`
 
 2. **Enable GitHub Pages**:
-   - Go to your repository on GitHub
+   - Go to https://github.com/marcuskhor/marcuskhor.github.io
    - Navigate to **Settings** → **Pages**
    - Under "Build and deployment", select:
      - **Source**: GitHub Actions
-   - Save the settings
+   - Click **Save**
 
-3. **Configure Base Path** (if needed):
-   - If your repository is named something other than `username.github.io`, you'll need to update `vite.config.ts`
-   - Add the base path configuration:
-     ```typescript
-     export default defineConfig(({ mode }) => ({
-       base: '/your-repo-name/',  // Add this line
-       // ... rest of config
-     }))
-     ```
-   - Replace `your-repo-name` with your actual repository name
-
-4. **Deploy**:
-   - Push your code to the `main` branch
+3. **Deploy**:
+   - The code will automatically push from Lovable to GitHub
    - GitHub Actions will automatically build and deploy
-   - Your site will be available at: `https://username.github.io/repo-name/`
+   - Your site will be live at: **https://marcuskhor.github.io**
+   - First deployment takes 2-5 minutes
+
+4. **Verify Deployment**:
+   - Go to the **Actions** tab in your GitHub repo
+   - You should see the "Deploy to GitHub Pages" workflow running
+   - Once complete (green checkmark), visit https://marcuskhor.github.io
 
 ### Manual Deployment
 
