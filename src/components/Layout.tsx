@@ -31,6 +31,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Burger Button - Always Visible, Independent of Navbar */}
+      {!isMenuOpen && (
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => setIsMenuOpen(true)}
+          className="fixed top-5 right-4 bg-primary hover:bg-primary-dark shadow-lg z-[100] w-12 h-12"
+        >
+          <Menu className="w-6 h-6 text-white" />
+        </Button>
+      )}
+
       {/* Navigation */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -54,33 +66,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
             </div>
 
-            {/* Navigation hidden - burger menu only */}
-
-            {/* Contact Info & Mobile Menu */}
-            <div className="flex items-center space-x-4 flex-shrink-0">
-              {/* Spacer for burger button */}
-            </div>
+            {/* Spacer for burger button */}
+            <div className="w-12 h-12"></div>
           </div>
         </div>
+      </nav>
 
-        {/* Burger Button - Fixed Position */}
-        {!isMenuOpen && (
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setIsMenuOpen(true)}
-            className="fixed top-5 right-4 bg-primary hover:bg-primary-dark shadow-lg z-[100] w-12 h-12 pointer-events-auto"
-          >
-            <Menu className="w-6 h-6 text-white" />
-          </Button>
-        )}
-
-        {/* Burger Menu - Right Sidebar */}
-        {isMenuOpen && (
-          <div 
-            className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm animate-fade-in"
-            onClick={() => setIsMenuOpen(false)}
-          >
+      {/* Burger Menu - Right Sidebar */}
+      {isMenuOpen && (
+        <div 
+          className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm animate-fade-in"
+          onClick={() => setIsMenuOpen(false)}
+        >
             <div 
               className="fixed top-0 right-0 h-full w-80 sm:w-96 bg-background shadow-2xl animate-slide-in-right overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
@@ -195,10 +192,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   Get Free Consultation
                 </Link>
               </div>
-            </div>
           </div>
-        )}
-      </nav>
+        </div>
+      )}
 
       {/* Main Content */}
       <main>{children}</main>
