@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logoImage from '@/assets/AWA_logo.png';
 
 const navigationItems = [
   { name: 'Home', href: '/' },
@@ -55,9 +56,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex items-center justify-between h-20 py-3">
             {/* Logo Space */}
             <div className="flex items-center space-x-4 flex-shrink-0">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center border-2 border-dashed border-primary/30 flex-shrink-0">
-                <span className="text-xs text-primary font-medium">LOGO</span>
-              </div>
+              <img 
+                src={logoImage} 
+                alt="AWA Design & Build Logo" 
+                className="h-14 w-auto flex-shrink-0"
+              />
               <div className="hidden md:block flex-shrink-0">
                 <h1 className="text-xl font-bold text-luxury-charcoal whitespace-nowrap">
                   AWA DESIGN & BUILD
@@ -205,6 +208,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div className="lg:col-span-2">
+              <img 
+                src={logoImage} 
+                alt="AWA Design & Build Logo" 
+                className="h-16 w-auto mb-4"
+              />
               <h3 className="text-2xl font-bold mb-4">AWA DESIGN & BUILD SDN BHD</h3>
               <p className="text-luxury-silver mb-6 leading-relaxed">
                 Transforming spaces with luxury interior design and exceptional craftsmanship. 
