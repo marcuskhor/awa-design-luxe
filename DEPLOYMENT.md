@@ -1,4 +1,4 @@
-# Deployment Guide for marcuskhor.github.io
+# Deployment Guide for awa-design-luxe
 
 ## GitHub Pages Deployment
 
@@ -9,11 +9,10 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 1. **Connect to GitHub**:
    - Click the **GitHub** button in the top right of the Lovable editor
    - Authorize the Lovable GitHub App
-   - When prompted, create a new repository named: **marcuskhor.github.io**
-   - Important: The repository name MUST be exactly `marcuskhor.github.io`
+   - Repository name: **awa-design-luxe**
 
 2. **Enable GitHub Pages**:
-   - Go to https://github.com/marcuskhor/marcuskhor.github.io
+   - Go to https://github.com/marcuskhor/awa-design-luxe
    - Navigate to **Settings** → **Pages**
    - Under "Build and deployment", select:
      - **Source**: GitHub Actions
@@ -22,13 +21,13 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 3. **Deploy**:
    - The code will automatically push from Lovable to GitHub
    - GitHub Actions will automatically build and deploy
-   - Your site will be live at: **https://marcuskhor.github.io**
+   - Your site will be live at: **https://marcuskhor.github.io/awa-design-luxe/**
    - First deployment takes 2-5 minutes
 
 4. **Verify Deployment**:
    - Go to the **Actions** tab in your GitHub repo
    - You should see the "Deploy to GitHub Pages" workflow running
-   - Once complete (green checkmark), visit https://marcuskhor.github.io
+   - Once complete (green checkmark), visit https://marcuskhor.github.io/awa-design-luxe/
 
 ### Manual Deployment
 
