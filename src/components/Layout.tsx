@@ -59,7 +59,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <img 
                 src={logoImage} 
                 alt="AWA Design & Build Logo" 
-                className="h-14 w-auto flex-shrink-0"
+                className="h-[11rem] w-auto flex-shrink-0"
               />
               <div className="hidden md:block flex-shrink-0">
                 <h1 className="text-xl font-bold text-luxury-charcoal whitespace-nowrap">
@@ -211,7 +211,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <img 
                 src={logoImage} 
                 alt="AWA Design & Build Logo" 
-                className="h-16 w-auto mb-4"
+                className="h-[11rem] w-auto"
               />
               <h3 className="text-2xl font-bold mb-4">AWA DESIGN & BUILD SDN BHD</h3>
               <p className="text-luxury-silver mb-6 leading-relaxed">
