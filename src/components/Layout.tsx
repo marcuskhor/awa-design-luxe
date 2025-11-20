@@ -63,9 +63,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               />
               <div className="hidden md:block flex-shrink-0">
                 <h1 className="text-xl font-bold text-luxury-charcoal whitespace-nowrap">
-                  AWA DESIGN & BUILD
+                  AWA DESIGN & BUILD SDN BHD
                 </h1>
-                <p className="text-sm text-luxury-silver whitespace-nowrap">SDN BHD</p>
               </div>
             </div>
 
