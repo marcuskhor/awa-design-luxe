@@ -44,7 +44,7 @@ const About = () => {
               About AWA Design & Build
             </h1>
             <p className="text-xl text-white/90 max-w-2xl">
-              Creating exceptional interior spaces with passion, expertise, and attention to detail since 2009.
+              Creating exceptional interior spaces with passion, expertise, and attention to detail since 2020.
             </p>
           </ScrollAnimation>
         </div>
@@ -61,7 +61,7 @@ const About = () => {
                 </h2>
                 <div className="space-y-6 text-luxury-silver leading-relaxed">
                   <p>
-                    Founded in 2009, AWA Design & Build SDN BHD has grown from a small interior design 
+                    Founded in 2020, AWA Design & Build SDN BHD has grown from a small interior design 
                     studio to one of Malaysia's most respected luxury interior design and build companies. 
                     Our journey began with a simple vision: to create beautiful, functional spaces that 
                     enhance the way people live and work.
@@ -90,7 +90,7 @@ const About = () => {
                 />
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-lg flex items-center justify-center">
                   <div className="text-center text-white">
-                    <div className="text-3xl font-bold">15+</div>
+                    <div className="text-3xl font-bold">5+</div>
                     <div className="text-sm">Years</div>
                   </div>
                 </div>

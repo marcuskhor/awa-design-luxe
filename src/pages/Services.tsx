@@ -7,6 +7,15 @@ import kitchenImage from '@/assets/kitchen-design.jpg';
 import bedroomImage from '@/assets/bedroom-design.jpg';
 import officeImage from '@/assets/office-design.jpg';
 import servicesHero from '@/assets/services-hero.jpg';
+import processProposal from '@/assets/process-proposal.jpg';
+import processMeasurement from '@/assets/process-measurement.jpg';
+import processSchematic from '@/assets/process-schematic.jpg';
+import processAmendment from '@/assets/process-amendment.jpg';
+import processDrawing from '@/assets/process-drawing.jpg';
+import processConfirmation from '@/assets/process-confirmation.jpg';
+import processConstruction from '@/assets/process-construction.jpg';
+import processFinishing from '@/assets/process-finishing.jpg';
+import processHandover from '@/assets/process-handover.jpg';
 
 const services = [
   {
@@ -255,64 +264,76 @@ const Services = () => {
                   step: 1,
                   title: 'Proposal',
                   description: 'Prepare concept mood board and estimate construction and architecture costing',
+                  image: processProposal,
                 },
                 {
                   step: 2,
                   title: 'Site Measurement',
                   description: 'Accurate measurement of your space to ensure precise planning and execution',
+                  image: processMeasurement,
                 },
                 {
                   step: 3,
                   title: 'Schematic Design',
                   description: '2D floor plan, furniture layout plan and detailed 3D perspective visualization',
+                  image: processSchematic,
                 },
                 {
                   step: 4,
                   title: '3D Amendment & Detailing',
                   description: 'Refine 3D designs and discuss all details until you\'re completely satisfied',
+                  image: processAmendment,
                 },
                 {
                   step: 5,
                   title: 'Construction Drawing',
                   description: 'Designer creates comprehensive construction drawings and reviews with owner',
+                  image: processDrawing,
                 },
                 {
                   step: 6,
                   title: 'Confirmation & Deposit',
                   description: 'Owner initials all construction drawings for final approval and makes deposit for construction',
+                  image: processConfirmation,
                 },
                 {
                   step: 7,
                   title: 'Construction Phase',
                   description: 'Construction begins with designer conducting regular site checking and quality control',
+                  image: processConstruction,
                 },
                 {
                   step: 8,
                   title: 'Final Touches',
                   description: 'Carpentry design proposal, lighting fitting selection, curtain & blind installation, and decorative items placement',
+                  image: processFinishing,
                 },
                 {
                   step: 9,
                   title: 'Handover',
                   description: 'Final inspection and handover to owner with complete documentation and warranty',
+                  image: processHandover,
                 },
               ].map((item, index) => (
                 <ScrollAnimation key={index} delay={index * 100}>
-                  <Card className="luxury-card hover:shadow-xl transition-shadow duration-300">
-                    <CardContent className="p-6">
-                      <div className="flex items-start">
-                        <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                          <span className="text-2xl font-bold text-primary">{item.step}</span>
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-bold text-luxury-charcoal mb-2">
-                            {item.title}
-                          </h3>
-                          <p className="text-luxury-silver leading-relaxed">
-                            {item.description}
-                          </p>
-                        </div>
+                  <Card className="luxury-card hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <div className="relative h-48 overflow-hidden">
+                      <img 
+                        src={item.image} 
+                        alt={item.title}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute top-4 left-4 w-14 h-14 bg-primary rounded-full flex items-center justify-center shadow-lg">
+                        <span className="text-2xl font-bold text-white">{item.step}</span>
                       </div>
+                    </div>
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold text-luxury-charcoal mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-luxury-silver leading-relaxed">
+                        {item.description}
+                      </p>
                     </CardContent>
                   </Card>
                 </ScrollAnimation>
