@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20 py-3">
             {/* Logo Space */}
-            <div className="flex items-center space-x-4 flex-shrink-0">
+            <Link to="/" className="flex items-center space-x-4 flex-shrink-0 hover:opacity-90 transition-opacity">
               <img 
                 src={logoImage} 
                 alt="AWA Design & Build Logo" 
@@ -66,7 +66,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   AWA DESIGN & BUILD SDN BHD
                 </h1>
               </div>
-            </div>
+            </Link>
 
             {/* Spacer for burger button */}
             <div className="w-12 h-12"></div>
