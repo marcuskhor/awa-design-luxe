@@ -213,7 +213,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 alt="AWA Design & Build Logo" 
                 className="h-[11rem] w-auto"
               />
-              <h3 className="text-2xl font-bold mb-4">AWA DESIGN & BUILD SDN BHD</h3>
+              <h3 className="text-2xl font-bold mb-4 whitespace-nowrap">AWA DESIGN & BUILD SDN BHD</h3>
               <p className="text-luxury-silver mb-6 leading-relaxed">
                 Transforming spaces with luxury interior design and exceptional craftsmanship. 
                 We create beautiful, functional environments that reflect your unique style and enhance your lifestyle.
