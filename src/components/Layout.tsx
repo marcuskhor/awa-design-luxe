@@ -28,6 +28,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     setIsMenuOpen(false);
+    window.scrollTo(0, 0);
   }, [location]);
 
   return (
