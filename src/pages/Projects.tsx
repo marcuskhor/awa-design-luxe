@@ -8,6 +8,7 @@ import heroImage from '@/assets/hero-interior.jpg';
 import kitchenImage from '@/assets/kitchen-design.jpg';
 import bedroomImage from '@/assets/bedroom-design.jpg';
 import officeImage from '@/assets/office-design.jpg';
+import arunyaKitchen from '@/assets/arunya-kitchen.png';
 
 const categories = ['All', 'Residential', 'Commercial', 'Kitchen & Bath'];
 
@@ -15,6 +16,17 @@ const categories = ['All', 'Residential', 'Commercial', 'Kitchen & Bath'];
 const projects = [
   {
     id: 1,
+    title: 'ARUNYA RESIDENCE',
+    category: 'Residential',
+    location: 'Singapore',
+    year: '2025',
+    area: '1,800 sq ft',
+    image: arunyaKitchen,
+    description: 'Contemporary residential design featuring modern kitchen, elegant living spaces, and functional utility areas with premium finishes.',
+    tags: ['Modern', 'Contemporary', 'Premium'],
+  },
+  {
+    id: 2,
     title: 'Modern Luxury Villa',
     category: 'Residential',
     location: 'Petaling Jaya, Selangor',
@@ -25,7 +37,7 @@ const projects = [
     tags: ['Modern', 'Villa', 'Luxury'],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Gourmet Kitchen Renovation',
     category: 'Kitchen & Bath',
     location: 'Mont Kiara, KL',
@@ -36,7 +48,7 @@ const projects = [
     tags: ['Kitchen', 'Renovation', 'Custom'],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Master Bedroom Suite',
     category: 'Residential',
     location: 'Bangsar, KL',
@@ -47,7 +59,7 @@ const projects = [
     tags: ['Bedroom', 'Suite', 'Elegant'],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Corporate Office Design',
     category: 'Commercial',
     location: 'KLCC, KL',
@@ -58,7 +70,7 @@ const projects = [
     tags: ['Office', 'Corporate', 'Modern'],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Penthouse Living Room',
     category: 'Residential',
     location: 'Damansara Heights',
@@ -69,7 +81,7 @@ const projects = [
     tags: ['Penthouse', 'Living', 'Premium'],
   },
   {
-    id: 6,
+    id: 7,
     title: 'Boutique Hotel Lobby',
     category: 'Commercial',
     location: 'Bukit Bintang, KL',

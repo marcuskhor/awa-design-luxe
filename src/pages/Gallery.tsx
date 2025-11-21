@@ -3,77 +3,50 @@ import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
-import heroImage from '@/assets/hero-interior.jpg';
-import kitchenImage from '@/assets/kitchen-design.jpg';
-import bedroomImage from '@/assets/bedroom-design.jpg';
-import officeImage from '@/assets/office-design.jpg';
+import arunyaKitchen from '@/assets/arunya-kitchen.png';
+import arunyaLiving from '@/assets/arunya-living.png';
+import arunyaYardBlend from '@/assets/arunya-yard-blend.png';
+import arunyaYardChroma from '@/assets/arunya-yard-chroma.png';
+import arunyaYardPowder from '@/assets/arunya-yard-powder.png';
 
-const categories = ['All', 'Living Rooms', 'Bedrooms', 'Kitchens', 'Bathrooms', 'Offices', 'Commercial'];
+const categories = ['All', 'Living Rooms', 'Kitchens', 'Laundry Room'];
 
-// Sample gallery data
+// Gallery data
 const galleryImages = [
   {
     id: 1,
-    src: heroImage,
-    category: 'Living Rooms',
-    title: 'Modern Living Room',
-    description: 'Contemporary design with elegant furnishings',
+    src: arunyaKitchen,
+    category: 'Kitchens',
+    title: 'ARUNYA RESIDENCE - Kitchen',
+    description: 'Modern kitchen with premium appliances',
   },
   {
     id: 2,
-    src: kitchenImage,
-    category: 'Kitchens',
-    title: 'Luxury Kitchen',
-    description: 'Custom cabinetry with premium appliances',
+    src: arunyaLiving,
+    category: 'Living Rooms',
+    title: 'ARUNYA RESIDENCE - Living Room',
+    description: 'Contemporary living space with elegant details',
   },
   {
     id: 3,
-    src: bedroomImage,
-    category: 'Bedrooms',
-    title: 'Master Bedroom',
-    description: 'Peaceful retreat with sophisticated styling',
+    src: arunyaYardBlend,
+    category: 'Laundry Room',
+    title: 'ARUNYA RESIDENCE - Yard Blend Series',
+    description: 'Functional laundry space with modern fixtures',
   },
   {
     id: 4,
-    src: officeImage,
-    category: 'Offices',
-    title: 'Executive Office',
-    description: 'Professional workspace with modern aesthetics',
+    src: arunyaYardChroma,
+    category: 'Laundry Room',
+    title: 'ARUNYA RESIDENCE - Yard Chroma Series',
+    description: 'Efficient utility area design',
   },
   {
     id: 5,
-    src: heroImage,
-    category: 'Commercial',
-    title: 'Hotel Lobby',
-    description: 'Welcoming space with luxury finishes',
-  },
-  {
-    id: 6,
-    src: bedroomImage,
-    category: 'Bedrooms',
-    title: 'Guest Bedroom',
-    description: 'Comfortable and stylish accommodation',
-  },
-  {
-    id: 7,
-    src: kitchenImage,
-    category: 'Bathrooms',
-    title: 'Spa Bathroom',
-    description: 'Resort-style bathroom with premium fixtures',
-  },
-  {
-    id: 8,
-    src: officeImage,
-    category: 'Commercial',
-    title: 'Restaurant Interior',
-    description: 'Inviting dining atmosphere with warm lighting',
-  },
-  {
-    id: 9,
-    src: heroImage,
-    category: 'Living Rooms',
-    title: 'Penthouse Lounge',
-    description: 'Sophisticated entertaining space',
+    src: arunyaYardPowder,
+    category: 'Laundry Room',
+    title: 'ARUNYA RESIDENCE - Yard Powder Series',
+    description: 'Compact laundry solution',
   },
 ];
 
