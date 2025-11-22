@@ -4,92 +4,41 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
-import heroImage from '@/assets/hero-interior.jpg';
-import kitchenImage from '@/assets/kitchen-design.jpg';
-import bedroomImage from '@/assets/bedroom-design.jpg';
-import officeImage from '@/assets/office-design.jpg';
-import arunyaKitchen from '@/assets/arunya-kitchen.png';
+import pulseBed1 from '@/assets/pulse-bed-1.png';
+import pulseBed2 from '@/assets/pulse-bed-2.png';
+import pulseDining from '@/assets/pulse-dining.png';
+import pulseLiving1 from '@/assets/pulse-living-1.png';
+import pulseLiving2 from '@/assets/pulse-living-2.png';
+import pulseMb from '@/assets/pulse-mb.png';
+import pulseMb2 from '@/assets/pulse-mb-2.png';
+import pulseYard from '@/assets/pulse-yard.png';
+import pulseAltar from '@/assets/pulse-altar.png';
 
-const categories = ['All', 'Residential', 'Commercial', 'Kitchen & Bath'];
+const categories = ['All', 'Residential'];
 
 // Sample project data - in a real app, this would come from a database
 const projects = [
   {
     id: 1,
-    title: 'ARUNYA RESIDENCE',
+    title: 'PULSE @ PUCHONG',
     category: 'Residential',
-    location: 'Singapore',
+    location: 'Puchong, Selangor',
     year: '2025',
-    area: '1,800 sq ft',
-    image: arunyaKitchen,
-    description: 'Contemporary residential design featuring modern kitchen, elegant living spaces, and functional utility areas with premium finishes.',
-    tags: ['Modern', 'Contemporary', 'Premium'],
-  },
-  {
-    id: 2,
-    title: 'Modern Luxury Villa',
-    category: 'Residential',
-    location: 'Petaling Jaya, Selangor',
-    year: '2024',
-    area: '3,500 sq ft',
-    image: heroImage,
-    description: 'A stunning contemporary villa featuring clean lines, luxury finishes, and sophisticated color palette.',
-    tags: ['Modern', 'Villa', 'Luxury'],
-  },
-  {
-    id: 3,
-    title: 'Gourmet Kitchen Renovation',
-    category: 'Kitchen & Bath',
-    location: 'Mont Kiara, KL',
-    year: '2024',
-    area: '450 sq ft',
-    image: kitchenImage,
-    description: 'Complete kitchen transformation with custom cabinetry, premium appliances, and marble countertops.',
-    tags: ['Kitchen', 'Renovation', 'Custom'],
-  },
-  {
-    id: 4,
-    title: 'Master Bedroom Suite',
-    category: 'Residential',
-    location: 'Bangsar, KL',
-    year: '2023',
-    area: '800 sq ft',
-    image: bedroomImage,
-    description: 'Elegant master bedroom with walk-in closet, featuring warm textures and ambient lighting.',
-    tags: ['Bedroom', 'Suite', 'Elegant'],
-  },
-  {
-    id: 5,
-    title: 'Corporate Office Design',
-    category: 'Commercial',
-    location: 'KLCC, KL',
-    year: '2023',
-    area: '12,000 sq ft',
-    image: officeImage,
-    description: 'Modern office space designed to enhance productivity and reflect company culture.',
-    tags: ['Office', 'Corporate', 'Modern'],
-  },
-  {
-    id: 6,
-    title: 'Penthouse Living Room',
-    category: 'Residential',
-    location: 'Damansara Heights',
-    year: '2023',
-    area: '1,200 sq ft',
-    image: heroImage,
-    description: 'Luxurious penthouse living area with panoramic city views and premium furnishings.',
-    tags: ['Penthouse', 'Living', 'Premium'],
-  },
-  {
-    id: 7,
-    title: 'Boutique Hotel Lobby',
-    category: 'Commercial',
-    location: 'Bukit Bintang, KL',
-    year: '2023',
-    area: '2,000 sq ft',
-    image: officeImage,
-    description: 'Sophisticated hotel lobby design that creates a memorable first impression for guests.',
-    tags: ['Hotel', 'Lobby', 'Sophisticated'],
+    area: '1,500 sq ft',
+    image: pulseLiving1,
+    description: 'Complete residential interior design featuring elegant bedrooms, contemporary living spaces, stylish dining area, luxurious master bedroom, functional laundry room, and sacred altar space.',
+    tags: ['Modern', 'Contemporary', 'Residential'],
+    gallery: [
+      pulseBed1,
+      pulseBed2,
+      pulseDining,
+      pulseLiving1,
+      pulseLiving2,
+      pulseMb,
+      pulseMb2,
+      pulseYard,
+      pulseAltar,
+    ],
   },
 ];
 
