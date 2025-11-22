@@ -3,50 +3,82 @@ import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
-import arunyaKitchen from '@/assets/arunya-kitchen.png';
-import arunyaLiving from '@/assets/arunya-living.png';
-import arunyaYardBlend from '@/assets/arunya-yard-blend.png';
-import arunyaYardChroma from '@/assets/arunya-yard-chroma.png';
-import arunyaYardPowder from '@/assets/arunya-yard-powder.png';
+import pulseBed1 from '@/assets/pulse-bed-1.png';
+import pulseBed2 from '@/assets/pulse-bed-2.png';
+import pulseDining from '@/assets/pulse-dining.png';
+import pulseLiving1 from '@/assets/pulse-living-1.png';
+import pulseLiving2 from '@/assets/pulse-living-2.png';
+import pulseMb from '@/assets/pulse-mb.png';
+import pulseMb2 from '@/assets/pulse-mb-2.png';
+import pulseYard from '@/assets/pulse-yard.png';
+import pulseAltar from '@/assets/pulse-altar.png';
 
-const categories = ['All', 'Living Rooms', 'Kitchens', 'Laundry Room'];
+const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Laundry Room', 'Altar'];
 
 // Gallery data
 const galleryImages = [
   {
     id: 1,
-    src: arunyaKitchen,
-    category: 'Kitchens',
-    title: 'ARUNYA RESIDENCE - Kitchen',
-    description: 'Modern kitchen with premium appliances',
+    src: pulseBed1,
+    category: 'Bedrooms',
+    title: 'PULSE @ PUCHONG - Bedroom 1',
+    description: 'Contemporary bedroom design',
   },
   {
     id: 2,
-    src: arunyaLiving,
-    category: 'Living Rooms',
-    title: 'ARUNYA RESIDENCE - Living Room',
-    description: 'Contemporary living space with elegant details',
+    src: pulseBed2,
+    category: 'Bedrooms',
+    title: 'PULSE @ PUCHONG - Bedroom 2',
+    description: 'Elegant bedroom space',
   },
   {
     id: 3,
-    src: arunyaYardBlend,
-    category: 'Laundry Room',
-    title: 'ARUNYA RESIDENCE - Yard Blend Series',
-    description: 'Functional laundry space with modern fixtures',
+    src: pulseDining,
+    category: 'Dining',
+    title: 'PULSE @ PUCHONG - Dining Area',
+    description: 'Modern dining room design',
   },
   {
     id: 4,
-    src: arunyaYardChroma,
-    category: 'Laundry Room',
-    title: 'ARUNYA RESIDENCE - Yard Chroma Series',
-    description: 'Efficient utility area design',
+    src: pulseLiving1,
+    category: 'Living Rooms',
+    title: 'PULSE @ PUCHONG - Living Room 1',
+    description: 'Stylish living space',
   },
   {
     id: 5,
-    src: arunyaYardPowder,
+    src: pulseLiving2,
+    category: 'Living Rooms',
+    title: 'PULSE @ PUCHONG - Living Room 2',
+    description: 'Contemporary living area',
+  },
+  {
+    id: 6,
+    src: pulseMb,
+    category: 'Master Bedroom',
+    title: 'PULSE @ PUCHONG - Master Bedroom',
+    description: 'Luxurious master bedroom',
+  },
+  {
+    id: 7,
+    src: pulseMb2,
+    category: 'Master Bedroom',
+    title: 'PULSE @ PUCHONG - Master Bedroom 2',
+    description: 'Elegant master suite',
+  },
+  {
+    id: 8,
+    src: pulseYard,
     category: 'Laundry Room',
-    title: 'ARUNYA RESIDENCE - Yard Powder Series',
-    description: 'Compact laundry solution',
+    title: 'PULSE @ PUCHONG - Yard',
+    description: 'Functional laundry space',
+  },
+  {
+    id: 9,
+    src: pulseAltar,
+    category: 'Altar',
+    title: 'PULSE @ PUCHONG - Altar',
+    description: 'Sacred altar space',
   },
 ];
 
