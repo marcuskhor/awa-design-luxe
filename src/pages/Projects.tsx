@@ -4,6 +4,11 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
+import arunyaKitchen from '@/assets/arunya-kitchen.png';
+import arunyaLiving from '@/assets/arunya-living.png';
+import arunyaYardBlend from '@/assets/arunya-yard-blend.png';
+import arunyaYardChroma from '@/assets/arunya-yard-chroma.png';
+import arunyaYardPowder from '@/assets/arunya-yard-powder.png';
 import pulseBed1 from '@/assets/pulse-bed-1.png';
 import pulseBed2 from '@/assets/pulse-bed-2.png';
 import pulseDining from '@/assets/pulse-dining.png';
@@ -20,6 +25,24 @@ const categories = ['All', 'Residential'];
 const projects = [
   {
     id: 1,
+    title: 'ARUNYA RESIDENCE',
+    category: 'Residential',
+    location: 'Singapore',
+    year: '2025',
+    area: '1,800 sq ft',
+    image: arunyaKitchen,
+    description: 'Contemporary residential design featuring modern kitchen, elegant living spaces, and functional utility areas with premium finishes.',
+    tags: ['Modern', 'Contemporary', 'Premium'],
+    gallery: [
+      arunyaKitchen,
+      arunyaLiving,
+      arunyaYardBlend,
+      arunyaYardChroma,
+      arunyaYardPowder,
+    ],
+  },
+  {
+    id: 2,
     title: 'PULSE @ PUCHONG',
     category: 'Residential',
     location: 'Puchong, Selangor',
