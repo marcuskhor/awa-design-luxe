@@ -18,6 +18,9 @@ import pulseMb from '@/assets/pulse-mb.png';
 import pulseMb2 from '@/assets/pulse-mb-2.png';
 import pulseYard from '@/assets/pulse-yard.png';
 import pulseAltar from '@/assets/pulse-altar.png';
+import dutaBedroom from '@/assets/duta-bedroom.jpg';
+import dutaDining from '@/assets/duta-dining.png';
+import dutaLiving from '@/assets/duta-living.png';
 
 const categories = ['All', 'Residential'];
 
@@ -61,6 +64,22 @@ const projects = [
       pulseMb2,
       pulseYard,
       pulseAltar,
+    ],
+  },
+  {
+    id: 3,
+    title: 'DUTA PARK',
+    category: 'Residential',
+    location: 'Kuala Lumpur',
+    year: '2024',
+    area: '1,400 sq ft',
+    image: dutaLiving,
+    description: 'Modern residential interior featuring sophisticated bedroom design, elegant dining area, and contemporary living space with premium finishes.',
+    tags: ['Modern', 'Elegant', 'Contemporary'],
+    gallery: [
+      dutaBedroom,
+      dutaDining,
+      dutaLiving,
     ],
   },
 ];

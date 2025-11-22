@@ -17,6 +17,9 @@ import pulseMb from '@/assets/pulse-mb.png';
 import pulseMb2 from '@/assets/pulse-mb-2.png';
 import pulseYard from '@/assets/pulse-yard.png';
 import pulseAltar from '@/assets/pulse-altar.png';
+import dutaBedroom from '@/assets/duta-bedroom.jpg';
+import dutaDining from '@/assets/duta-dining.png';
+import dutaLiving from '@/assets/duta-living.png';
 
 const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Laundry Room', 'Altar'];
 
@@ -119,6 +122,27 @@ const galleryImages = [
     category: 'Altar',
     title: 'PULSE @ PUCHONG - Altar',
     description: 'Sacred altar space',
+  },
+  {
+    id: 15,
+    src: dutaBedroom,
+    category: 'Bedrooms',
+    title: 'DUTA PARK - Bedroom',
+    description: 'Elegant bedroom with modern furnishings',
+  },
+  {
+    id: 16,
+    src: dutaDining,
+    category: 'Dining',
+    title: 'DUTA PARK - Dining Area',
+    description: 'Contemporary dining space',
+  },
+  {
+    id: 17,
+    src: dutaLiving,
+    category: 'Living Rooms',
+    title: 'DUTA PARK - Living Room',
+    description: 'Modern living area with elegant design',
   },
 ];
 
