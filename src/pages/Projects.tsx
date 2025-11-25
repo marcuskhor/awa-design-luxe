@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Calendar, MapPin, Square } from 'lucide-react';
+import { Calendar, MapPin, Square, X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
 import arunyaKitchen from '@/assets/arunya-kitchen.png';
@@ -113,10 +114,42 @@ const projects = [
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('All');
+  const [selectedProject, setSelectedProject] = useState<number | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const filteredProjects = activeCategory === 'All' 
     ? projects 
     : projects.filter(project => project.category === activeCategory);
+
+  const openProjectGallery = (projectId: number) => {
+    setSelectedProject(projectId);
+    setCurrentImageIndex(0);
+  };
+
+  const closeGallery = () => {
+    setSelectedProject(null);
+    setCurrentImageIndex(0);
+  };
+
+  const navigateImage = (direction: 'prev' | 'next') => {
+    if (selectedProject === null) return;
+    const project = projects.find(p => p.id === selectedProject);
+    if (!project) return;
+
+    if (direction === 'prev') {
+      setCurrentImageIndex(prev => 
+        prev > 0 ? prev - 1 : project.gallery.length - 1
+      );
+    } else {
+      setCurrentImageIndex(prev => 
+        prev < project.gallery.length - 1 ? prev + 1 : 0
+      );
+    }
+  };
+
+  const currentProject = selectedProject !== null 
+    ? projects.find(p => p.id === selectedProject) 
+    : null;
 
   return (
     <Layout>
@@ -167,16 +200,25 @@ const Projects = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => (
               <ScrollAnimation key={project.id} delay={index * 100}>
-                <Card className="luxury-card group cursor-pointer overflow-hidden">
+                <Card 
+                  className="luxury-card group cursor-pointer overflow-hidden"
+                  onClick={() => openProjectGallery(project.id)}
+                >
                   <div className="relative h-64 overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-luxury-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-luxury-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-16 h-16 bg-primary/90 rounded-full flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform duration-300">
+                          <ImageIcon className="w-8 h-8 text-white" />
+                        </div>
+                      </div>
+                    </div>
                     <div className="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2 mb-2">
                         {project.tags.map((tag, tagIndex) => (
                           <span
                             key={tagIndex}
@@ -186,6 +228,10 @@ const Projects = () => {
                           </span>
                         ))}
                       </div>
+                      <p className="text-sm text-white/90 flex items-center gap-1">
+                        <ImageIcon className="w-4 h-4" />
+                        {project.gallery.length} photos
+                      </p>
                     </div>
                   </div>
                   
@@ -262,6 +308,84 @@ const Projects = () => {
           </div>
         </div>
       </section>
+
+      {/* Project Gallery Modal */}
+      <Dialog open={selectedProject !== null} onOpenChange={closeGallery}>
+        <DialogContent className="max-w-5xl w-full h-[90vh] p-0 bg-background border-0">
+          {currentProject && (
+            <div className="relative w-full h-full flex flex-col">
+              {/* Header */}
+              <div className="absolute top-0 left-0 right-0 z-10 bg-gradient-to-b from-black/80 to-transparent p-6">
+                <div className="flex items-start justify-between">
+                  <div className="text-white">
+                    <h2 className="text-2xl font-bold mb-2">{currentProject.title}</h2>
+                    <p className="text-white/80 text-sm">
+                      {currentImageIndex + 1} / {currentProject.gallery.length}
+                    </p>
+                  </div>
+                  <button
+                    onClick={closeGallery}
+                    className="w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors duration-200"
+                  >
+                    <X className="w-5 h-5" />
+                  </button>
+                </div>
+              </div>
+
+              {/* Image */}
+              <div className="flex-1 flex items-center justify-center bg-black/95 p-4">
+                <img
+                  src={currentProject.gallery[currentImageIndex]}
+                  alt={`${currentProject.title} - Image ${currentImageIndex + 1}`}
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+
+              {/* Navigation Buttons */}
+              {currentProject.gallery.length > 1 && (
+                <>
+                  <button
+                    onClick={() => navigateImage('prev')}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-all duration-200 hover:scale-110"
+                  >
+                    <ChevronLeft className="w-6 h-6" />
+                  </button>
+                  
+                  <button
+                    onClick={() => navigateImage('next')}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-all duration-200 hover:scale-110"
+                  >
+                    <ChevronRight className="w-6 h-6" />
+                  </button>
+                </>
+              )}
+
+              {/* Thumbnail Strip */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
+                  {currentProject.gallery.map((img, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setCurrentImageIndex(idx)}
+                      className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden transition-all duration-200 ${
+                        idx === currentImageIndex 
+                          ? 'ring-2 ring-primary scale-105' 
+                          : 'opacity-60 hover:opacity-100'
+                      }`}
+                    >
+                      <img
+                        src={img}
+                        alt={`Thumbnail ${idx + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
 
       {/* Contact CTA */}
       <section className="py-24 bg-luxury-charcoal text-white">
