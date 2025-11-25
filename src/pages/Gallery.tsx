@@ -27,8 +27,15 @@ import nidozLiv2 from '@/assets/nidoz-liv-2.png';
 import nidozGaming from '@/assets/nidoz-gaming.png';
 import nidozGirls from '@/assets/nidoz-girls.png';
 import nidozMums from '@/assets/nidoz-mums.png';
+import bangiDining1 from '@/assets/bangi-dining-1.png';
+import bangiDining2 from '@/assets/bangi-dining-2.png';
+import bangiKit1 from '@/assets/bangi-kit-1.png';
+import bangiKit2 from '@/assets/bangi-kit-2.png';
+import bangiLaundry1 from '@/assets/bangi-laundry-1.png';
+import bangiLaundry2 from '@/assets/bangi-laundry-2.png';
+import bangiStoreroom from '@/assets/bangi-storeroom.png';
 
-const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Laundry Room', 'Altar', 'Foyer'];
+const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Laundry Room', 'Altar', 'Foyer', 'Storage'];
 
 // Gallery data
 const galleryImages = [
@@ -199,6 +206,55 @@ const galleryImages = [
     category: 'Bedrooms',
     title: 'NIDOZ - Mum\'s Bedroom',
     description: 'Sophisticated master bedroom design',
+  },
+  {
+    id: 25,
+    src: bangiDining1,
+    category: 'Dining',
+    title: 'BANGI LANDED - Dining 1',
+    description: 'Modern dining area with elegant design',
+  },
+  {
+    id: 26,
+    src: bangiDining2,
+    category: 'Dining',
+    title: 'BANGI LANDED - Dining 2',
+    description: 'Contemporary dining space',
+  },
+  {
+    id: 27,
+    src: bangiKit1,
+    category: 'Kitchens',
+    title: 'BANGI LANDED - Kitchen 1',
+    description: 'Functional kitchen with modern appliances',
+  },
+  {
+    id: 28,
+    src: bangiKit2,
+    category: 'Kitchens',
+    title: 'BANGI LANDED - Kitchen 2',
+    description: 'Elegant kitchen design',
+  },
+  {
+    id: 29,
+    src: bangiLaundry1,
+    category: 'Laundry Room',
+    title: 'BANGI LANDED - Laundry 1',
+    description: 'Efficient laundry space',
+  },
+  {
+    id: 30,
+    src: bangiLaundry2,
+    category: 'Laundry Room',
+    title: 'BANGI LANDED - Laundry 2',
+    description: 'Modern laundry room design',
+  },
+  {
+    id: 31,
+    src: bangiStoreroom,
+    category: 'Storage',
+    title: 'BANGI LANDED - Storeroom',
+    description: 'Organized storage solution',
   },
 ];
 

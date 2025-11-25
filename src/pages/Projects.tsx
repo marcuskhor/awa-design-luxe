@@ -29,6 +29,13 @@ import nidozLiv2 from '@/assets/nidoz-liv-2.png';
 import nidozGaming from '@/assets/nidoz-gaming.png';
 import nidozGirls from '@/assets/nidoz-girls.png';
 import nidozMums from '@/assets/nidoz-mums.png';
+import bangiDining1 from '@/assets/bangi-dining-1.png';
+import bangiDining2 from '@/assets/bangi-dining-2.png';
+import bangiKit1 from '@/assets/bangi-kit-1.png';
+import bangiKit2 from '@/assets/bangi-kit-2.png';
+import bangiLaundry1 from '@/assets/bangi-laundry-1.png';
+import bangiLaundry2 from '@/assets/bangi-laundry-2.png';
+import bangiStoreroom from '@/assets/bangi-storeroom.png';
 
 const categories = ['All', 'Residential'];
 
@@ -108,6 +115,26 @@ const projects = [
       nidozGaming,
       nidozGirls,
       nidozMums,
+    ],
+  },
+  {
+    id: 5,
+    title: 'BANGI LANDED',
+    category: 'Residential',
+    location: 'Bangi, Selangor',
+    year: '2025',
+    area: '1,700 sq ft',
+    image: bangiDining1,
+    description: 'Modern landed property featuring elegant dining areas, functional kitchen spaces, efficient laundry room, and organized storage solutions.',
+    tags: ['Modern', 'Functional', 'Contemporary'],
+    gallery: [
+      bangiDining1,
+      bangiDining2,
+      bangiKit1,
+      bangiKit2,
+      bangiLaundry1,
+      bangiLaundry2,
+      bangiStoreroom,
     ],
   },
 ];
