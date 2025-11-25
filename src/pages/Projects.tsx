@@ -21,6 +21,12 @@ import pulseAltar from '@/assets/pulse-altar.png';
 import dutaBedroom from '@/assets/duta-bedroom.jpg';
 import dutaDining from '@/assets/duta-dining.png';
 import dutaLiving from '@/assets/duta-living.png';
+import nidozFoyer1 from '@/assets/nidoz-foyer-1.png';
+import nidozFoyer2 from '@/assets/nidoz-foyer-2.png';
+import nidozLiv1 from '@/assets/nidoz-liv-1.png';
+import nidozGaming from '@/assets/nidoz-gaming.png';
+import nidozGirls from '@/assets/nidoz-girls.png';
+import nidozMums from '@/assets/nidoz-mums.png';
 
 const categories = ['All', 'Residential'];
 
@@ -80,6 +86,25 @@ const projects = [
       dutaBedroom,
       dutaDining,
       dutaLiving,
+    ],
+  },
+  {
+    id: 4,
+    title: 'NIDOZ',
+    category: 'Residential',
+    location: 'Malaysia',
+    year: '2024',
+    area: '1,600 sq ft',
+    image: nidozLiv1,
+    description: 'Complete residential interior featuring elegant foyer entrance, contemporary living space, and sophisticated bedroom designs including gaming room and personal sanctuaries.',
+    tags: ['Modern', 'Contemporary', 'Elegant'],
+    gallery: [
+      nidozFoyer1,
+      nidozFoyer2,
+      nidozLiv1,
+      nidozGaming,
+      nidozGirls,
+      nidozMums,
     ],
   },
 ];

@@ -20,8 +20,14 @@ import pulseAltar from '@/assets/pulse-altar.png';
 import dutaBedroom from '@/assets/duta-bedroom.jpg';
 import dutaDining from '@/assets/duta-dining.png';
 import dutaLiving from '@/assets/duta-living.png';
+import nidozFoyer1 from '@/assets/nidoz-foyer-1.png';
+import nidozFoyer2 from '@/assets/nidoz-foyer-2.png';
+import nidozLiv1 from '@/assets/nidoz-liv-1.png';
+import nidozGaming from '@/assets/nidoz-gaming.png';
+import nidozGirls from '@/assets/nidoz-girls.png';
+import nidozMums from '@/assets/nidoz-mums.png';
 
-const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Laundry Room', 'Altar'];
+const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Laundry Room', 'Altar', 'Foyer'];
 
 // Gallery data
 const galleryImages = [
@@ -143,6 +149,48 @@ const galleryImages = [
     category: 'Living Rooms',
     title: 'DUTA PARK - Living Room',
     description: 'Modern living area with elegant design',
+  },
+  {
+    id: 18,
+    src: nidozFoyer1,
+    category: 'Foyer',
+    title: 'NIDOZ - Foyer 1',
+    description: 'Elegant entrance with contemporary storage solutions',
+  },
+  {
+    id: 19,
+    src: nidozFoyer2,
+    category: 'Foyer',
+    title: 'NIDOZ - Foyer 2',
+    description: 'Sophisticated foyer with modern design',
+  },
+  {
+    id: 20,
+    src: nidozLiv1,
+    category: 'Living Rooms',
+    title: 'NIDOZ - Living Room',
+    description: 'Contemporary living space with seamless dining integration',
+  },
+  {
+    id: 21,
+    src: nidozGaming,
+    category: 'Bedrooms',
+    title: 'NIDOZ - Gaming Room',
+    description: 'Modern gaming bedroom with LED lighting',
+  },
+  {
+    id: 22,
+    src: nidozGirls,
+    category: 'Bedrooms',
+    title: 'NIDOZ - Girl\'s Bedroom',
+    description: 'Elegant bedroom with contemporary aesthetic',
+  },
+  {
+    id: 23,
+    src: nidozMums,
+    category: 'Bedrooms',
+    title: 'NIDOZ - Mum\'s Bedroom',
+    description: 'Sophisticated master bedroom design',
   },
 ];
 
