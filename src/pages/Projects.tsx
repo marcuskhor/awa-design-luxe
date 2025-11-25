@@ -24,6 +24,7 @@ import dutaLiving from '@/assets/duta-living.png';
 import nidozFoyer1 from '@/assets/nidoz-foyer-1.png';
 import nidozFoyer2 from '@/assets/nidoz-foyer-2.png';
 import nidozLiv1 from '@/assets/nidoz-liv-1.png';
+import nidozLiv2 from '@/assets/nidoz-liv-2.png';
 import nidozGaming from '@/assets/nidoz-gaming.png';
 import nidozGirls from '@/assets/nidoz-girls.png';
 import nidozMums from '@/assets/nidoz-mums.png';
@@ -102,6 +103,7 @@ const projects = [
       nidozFoyer1,
       nidozFoyer2,
       nidozLiv1,
+      nidozLiv2,
       nidozGaming,
       nidozGirls,
       nidozMums,

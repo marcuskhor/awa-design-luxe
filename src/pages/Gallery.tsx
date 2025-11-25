@@ -23,6 +23,7 @@ import dutaLiving from '@/assets/duta-living.png';
 import nidozFoyer1 from '@/assets/nidoz-foyer-1.png';
 import nidozFoyer2 from '@/assets/nidoz-foyer-2.png';
 import nidozLiv1 from '@/assets/nidoz-liv-1.png';
+import nidozLiv2 from '@/assets/nidoz-liv-2.png';
 import nidozGaming from '@/assets/nidoz-gaming.png';
 import nidozGirls from '@/assets/nidoz-girls.png';
 import nidozMums from '@/assets/nidoz-mums.png';
@@ -168,25 +169,32 @@ const galleryImages = [
     id: 20,
     src: nidozLiv1,
     category: 'Living Rooms',
-    title: 'NIDOZ - Living Room',
+    title: 'NIDOZ - Living Room 1',
     description: 'Contemporary living space with seamless dining integration',
   },
   {
     id: 21,
+    src: nidozLiv2,
+    category: 'Living Rooms',
+    title: 'NIDOZ - Living Room 2',
+    description: 'Elegant living area with minimalist aesthetic',
+  },
+  {
+    id: 22,
     src: nidozGaming,
     category: 'Bedrooms',
     title: 'NIDOZ - Gaming Room',
     description: 'Modern gaming bedroom with LED lighting',
   },
   {
-    id: 22,
+    id: 23,
     src: nidozGirls,
     category: 'Bedrooms',
     title: 'NIDOZ - Girl\'s Bedroom',
     description: 'Elegant bedroom with contemporary aesthetic',
   },
   {
-    id: 23,
+    id: 24,
     src: nidozMums,
     category: 'Bedrooms',
     title: 'NIDOZ - Mum\'s Bedroom',
