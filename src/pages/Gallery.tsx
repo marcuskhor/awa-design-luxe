@@ -34,8 +34,15 @@ import bangiKit2 from '@/assets/bangi-kit-2.png';
 import bangiLaundry1 from '@/assets/bangi-laundry-1.png';
 import bangiLaundry2 from '@/assets/bangi-laundry-2.png';
 import bangiStoreroom from '@/assets/bangi-storeroom.png';
+import tropikaB1 from '@/assets/tropika-b1.png';
+import tropikaLiv2 from '@/assets/tropika-liv-2.png';
+import tropikaMasterBath from '@/assets/tropika-master-bath.png';
+import tropikaMb1 from '@/assets/tropika-mb1.png';
+import tropikaMb2 from '@/assets/tropika-mb2.png';
+import tropikaMb3 from '@/assets/tropika-mb3.png';
+import tropikaTvWall from '@/assets/tropika-tv-wall.png';
 
-const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Laundry Room', 'Altar', 'Foyer', 'Storage'];
+const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Bathrooms', 'Laundry Room', 'Altar', 'Foyer', 'Storage'];
 
 // Gallery data
 const galleryImages = [
@@ -255,6 +262,55 @@ const galleryImages = [
     category: 'Storage',
     title: 'BANGI LANDED - Storeroom',
     description: 'Organized storage solution',
+  },
+  {
+    id: 32,
+    src: tropikaMb1,
+    category: 'Bedrooms',
+    title: 'TROPIKA - Master Bedroom 1',
+    description: 'Elegant master bedroom with sophisticated design',
+  },
+  {
+    id: 33,
+    src: tropikaMb2,
+    category: 'Bedrooms',
+    title: 'TROPIKA - Master Bedroom 2',
+    description: 'Luxurious bedroom with walk-in wardrobe',
+  },
+  {
+    id: 34,
+    src: tropikaMb3,
+    category: 'Bedrooms',
+    title: 'TROPIKA - Master Bedroom 3',
+    description: 'Contemporary master bedroom with vanity area',
+  },
+  {
+    id: 35,
+    src: tropikaB1,
+    category: 'Bedrooms',
+    title: 'TROPIKA - Bedroom',
+    description: 'Modern bedroom with built-in study desk',
+  },
+  {
+    id: 36,
+    src: tropikaMasterBath,
+    category: 'Bathrooms',
+    title: 'TROPIKA - Master Bathroom',
+    description: 'Luxurious master bathroom with premium fixtures',
+  },
+  {
+    id: 37,
+    src: tropikaLiv2,
+    category: 'Living Rooms',
+    title: 'TROPIKA - Living Room',
+    description: 'Contemporary living space with open concept design',
+  },
+  {
+    id: 38,
+    src: tropikaTvWall,
+    category: 'Living Rooms',
+    title: 'TROPIKA - TV Wall',
+    description: 'Elegant TV feature wall with modern design',
   },
 ];
 

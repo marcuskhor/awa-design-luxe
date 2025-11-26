@@ -36,6 +36,13 @@ import bangiKit2 from '@/assets/bangi-kit-2.png';
 import bangiLaundry1 from '@/assets/bangi-laundry-1.png';
 import bangiLaundry2 from '@/assets/bangi-laundry-2.png';
 import bangiStoreroom from '@/assets/bangi-storeroom.png';
+import tropikaB1 from '@/assets/tropika-b1.png';
+import tropikaLiv2 from '@/assets/tropika-liv-2.png';
+import tropikaMasterBath from '@/assets/tropika-master-bath.png';
+import tropikaMb1 from '@/assets/tropika-mb1.png';
+import tropikaMb2 from '@/assets/tropika-mb2.png';
+import tropikaMb3 from '@/assets/tropika-mb3.png';
+import tropikaTvWall from '@/assets/tropika-tv-wall.png';
 
 const categories = ['All', 'Residential'];
 
@@ -135,6 +142,26 @@ const projects = [
       bangiLaundry1,
       bangiLaundry2,
       bangiStoreroom,
+    ],
+  },
+  {
+    id: 6,
+    title: 'TROPIKA',
+    category: 'Residential',
+    location: 'Malaysia',
+    year: '2025',
+    area: '1,600 sq ft',
+    image: tropikaLiv2,
+    description: 'Modern residential interior featuring elegant bedrooms, luxurious bathrooms, and contemporary living spaces with sophisticated TV wall design.',
+    tags: ['Modern', 'Elegant', 'Luxury'],
+    gallery: [
+      tropikaLiv2,
+      tropikaTvWall,
+      tropikaMb1,
+      tropikaMb2,
+      tropikaMb3,
+      tropikaB1,
+      tropikaMasterBath,
     ],
   },
 ];
