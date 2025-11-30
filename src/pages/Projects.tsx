@@ -51,6 +51,15 @@ import panoramaDryKitchen from '@/assets/panorama-dry-kitchen.png';
 import panoramaYard from '@/assets/panorama-yard.png';
 import panoramaKitchen from '@/assets/panorama-kitchen.png';
 import panoramaFoyer from '@/assets/panorama-foyer.png';
+import lakesKitchen1 from '@/assets/lakes-kitchen-1.png';
+import lakesKitchen2 from '@/assets/lakes-kitchen-2.png';
+import lakesLiving from '@/assets/lakes-living.png';
+import lakesMasterBath from '@/assets/lakes-master-bath.png';
+import lakesMaster from '@/assets/lakes-master.png';
+import lakesStudy from '@/assets/lakes-study.png';
+import lakesDryKitchen from '@/assets/lakes-dry-kitchen.png';
+import lakesFoyer from '@/assets/lakes-foyer.png';
+import lakesGuest from '@/assets/lakes-guest.png';
 
 const categories = ['All', 'Residential'];
 
@@ -191,6 +200,28 @@ const projects = [
       panoramaKitchen,
       panoramaYard,
       panoramaFoyer,
+    ],
+  },
+  {
+    id: 8,
+    title: 'LAKES',
+    category: 'Residential',
+    location: 'Malaysia',
+    year: '2025',
+    area: '1,500 sq ft',
+    image: lakesLiving,
+    description: 'Comprehensive residential design featuring modern kitchen spaces, sophisticated bedrooms including study and guest rooms, elegant master bathroom, welcoming foyer, and stylish living area.',
+    tags: ['Modern', 'Elegant', 'Functional'],
+    gallery: [
+      lakesLiving,
+      lakesDryKitchen,
+      lakesKitchen1,
+      lakesKitchen2,
+      lakesMaster,
+      lakesStudy,
+      lakesGuest,
+      lakesMasterBath,
+      lakesFoyer,
     ],
   },
 ];
