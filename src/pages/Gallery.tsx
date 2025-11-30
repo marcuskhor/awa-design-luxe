@@ -49,6 +49,15 @@ import panoramaDryKitchen from '@/assets/panorama-dry-kitchen.png';
 import panoramaYard from '@/assets/panorama-yard.png';
 import panoramaKitchen from '@/assets/panorama-kitchen.png';
 import panoramaFoyer from '@/assets/panorama-foyer.png';
+import lakesKitchen1 from '@/assets/lakes-kitchen-1.png';
+import lakesKitchen2 from '@/assets/lakes-kitchen-2.png';
+import lakesLiving from '@/assets/lakes-living.png';
+import lakesMasterBath from '@/assets/lakes-master-bath.png';
+import lakesMaster from '@/assets/lakes-master.png';
+import lakesStudy from '@/assets/lakes-study.png';
+import lakesDryKitchen from '@/assets/lakes-dry-kitchen.png';
+import lakesFoyer from '@/assets/lakes-foyer.png';
+import lakesGuest from '@/assets/lakes-guest.png';
 
 const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Bathrooms', 'Laundry Room', 'Altar', 'Foyer', 'Storage'];
 
@@ -375,6 +384,69 @@ const galleryImages = [
     category: 'Foyer',
     title: 'PANORAMA - Foyer',
     description: 'Welcoming foyer with storage solutions',
+  },
+  {
+    id: 47,
+    src: lakesDryKitchen,
+    category: 'Kitchens',
+    title: 'LAKES - Dry Kitchen',
+    description: 'Modern dry kitchen with elegant finishes',
+  },
+  {
+    id: 48,
+    src: lakesKitchen1,
+    category: 'Kitchens',
+    title: 'LAKES - Kitchen 1',
+    description: 'Contemporary kitchen design with premium appliances',
+  },
+  {
+    id: 49,
+    src: lakesKitchen2,
+    category: 'Kitchens',
+    title: 'LAKES - Kitchen 2',
+    description: 'Functional kitchen space with modern aesthetics',
+  },
+  {
+    id: 50,
+    src: lakesFoyer,
+    category: 'Foyer',
+    title: 'LAKES - Foyer Area',
+    description: 'Welcoming entrance with elegant design',
+  },
+  {
+    id: 51,
+    src: lakesStudy,
+    category: 'Bedrooms',
+    title: 'LAKES - Study Room',
+    description: 'Contemporary study room with built-in storage',
+  },
+  {
+    id: 52,
+    src: lakesMaster,
+    category: 'Bedrooms',
+    title: 'LAKES - Master Bedroom',
+    description: 'Sophisticated master bedroom with elegant design',
+  },
+  {
+    id: 53,
+    src: lakesGuest,
+    category: 'Bedrooms',
+    title: 'LAKES - Guest Bedroom',
+    description: 'Comfortable guest bedroom with modern furnishings',
+  },
+  {
+    id: 54,
+    src: lakesMasterBath,
+    category: 'Bathrooms',
+    title: 'LAKES - Master Bathroom',
+    description: 'Luxurious master bathroom with premium fixtures',
+  },
+  {
+    id: 55,
+    src: lakesLiving,
+    category: 'Living Rooms',
+    title: 'LAKES - Living Area',
+    description: 'Spacious living area with contemporary design',
   },
 ];
 
