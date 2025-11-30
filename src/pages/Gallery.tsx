@@ -41,6 +41,14 @@ import tropikaMb1 from '@/assets/tropika-mb1.png';
 import tropikaMb2 from '@/assets/tropika-mb2.png';
 import tropikaMb3 from '@/assets/tropika-mb3.png';
 import tropikaTvWall from '@/assets/tropika-tv-wall.png';
+import panoramaBed1 from '@/assets/panorama-bed-1.png';
+import panoramaMb from '@/assets/panorama-mb.png';
+import panoramaLiv from '@/assets/panorama-liv.png';
+import panoramaDisplay from '@/assets/panorama-display.png';
+import panoramaDryKitchen from '@/assets/panorama-dry-kitchen.png';
+import panoramaYard from '@/assets/panorama-yard.png';
+import panoramaKitchen from '@/assets/panorama-kitchen.png';
+import panoramaFoyer from '@/assets/panorama-foyer.png';
 
 const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Bathrooms', 'Laundry Room', 'Altar', 'Foyer', 'Storage'];
 
@@ -311,6 +319,62 @@ const galleryImages = [
     category: 'Living Rooms',
     title: 'TROPIKA - TV Wall',
     description: 'Elegant TV feature wall with modern design',
+  },
+  {
+    id: 39,
+    src: panoramaBed1,
+    category: 'Bedrooms',
+    title: 'PANORAMA - Bedroom',
+    description: 'Minimalist bedroom with built-in storage',
+  },
+  {
+    id: 40,
+    src: panoramaMb,
+    category: 'Bedrooms',
+    title: 'PANORAMA - Master Bedroom',
+    description: 'Contemporary master bedroom with elegant wardrobe',
+  },
+  {
+    id: 41,
+    src: panoramaLiv,
+    category: 'Living Rooms',
+    title: 'PANORAMA - Living Room',
+    description: 'Modern living space with workspace integration',
+  },
+  {
+    id: 42,
+    src: panoramaDisplay,
+    category: 'Dining',
+    title: 'PANORAMA - Dining Display',
+    description: 'Elegant dining area with display shelving',
+  },
+  {
+    id: 43,
+    src: panoramaDryKitchen,
+    category: 'Kitchens',
+    title: 'PANORAMA - Dry Kitchen',
+    description: 'Modern dry kitchen with integrated dining',
+  },
+  {
+    id: 44,
+    src: panoramaYard,
+    category: 'Kitchens',
+    title: 'PANORAMA - Yard Kitchen',
+    description: 'Functional yard kitchen area',
+  },
+  {
+    id: 45,
+    src: panoramaKitchen,
+    category: 'Kitchens',
+    title: 'PANORAMA - Kitchen',
+    description: 'Contemporary kitchen with sleek finishes',
+  },
+  {
+    id: 46,
+    src: panoramaFoyer,
+    category: 'Foyer',
+    title: 'PANORAMA - Foyer',
+    description: 'Welcoming foyer with storage solutions',
   },
 ];
 

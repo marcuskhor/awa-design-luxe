@@ -43,6 +43,14 @@ import tropikaMb1 from '@/assets/tropika-mb1.png';
 import tropikaMb2 from '@/assets/tropika-mb2.png';
 import tropikaMb3 from '@/assets/tropika-mb3.png';
 import tropikaTvWall from '@/assets/tropika-tv-wall.png';
+import panoramaBed1 from '@/assets/panorama-bed-1.png';
+import panoramaMb from '@/assets/panorama-mb.png';
+import panoramaLiv from '@/assets/panorama-liv.png';
+import panoramaDisplay from '@/assets/panorama-display.png';
+import panoramaDryKitchen from '@/assets/panorama-dry-kitchen.png';
+import panoramaYard from '@/assets/panorama-yard.png';
+import panoramaKitchen from '@/assets/panorama-kitchen.png';
+import panoramaFoyer from '@/assets/panorama-foyer.png';
 
 const categories = ['All', 'Residential'];
 
@@ -162,6 +170,27 @@ const projects = [
       tropikaMb3,
       tropikaB1,
       tropikaMasterBath,
+    ],
+  },
+  {
+    id: 7,
+    title: 'PANORAMA',
+    category: 'Residential',
+    location: 'Malaysia',
+    year: '2025',
+    area: '1,400 sq ft',
+    image: panoramaLiv,
+    description: 'Contemporary residential design featuring minimalist bedrooms, modern living spaces, elegant dining area with display shelving, and sleek kitchen spaces.',
+    tags: ['Contemporary', 'Minimalist', 'Modern'],
+    gallery: [
+      panoramaLiv,
+      panoramaDisplay,
+      panoramaBed1,
+      panoramaMb,
+      panoramaDryKitchen,
+      panoramaKitchen,
+      panoramaYard,
+      panoramaFoyer,
     ],
   },
 ];
