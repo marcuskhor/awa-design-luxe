@@ -61,8 +61,18 @@ import lakesStudy from '@/assets/lakes-study.png';
 import lakesDryKitchen from '@/assets/lakes-dry-kitchen.png';
 import lakesFoyer from '@/assets/lakes-foyer.png';
 import lakesGuest from '@/assets/lakes-guest.png';
+import awaOfficeGf1 from '@/assets/awa-office-gf1.png';
+import awaOfficeGf2 from '@/assets/awa-office-gf2.png';
+import awaOfficeGf4 from '@/assets/awa-office-gf4.png';
+import awaOfficeGf5 from '@/assets/awa-office-gf5.png';
+import awaOfficeGf6 from '@/assets/awa-office-gf6.png';
+import awaOffice1f1 from '@/assets/awa-office-1f1.png';
+import awaOffice1f2 from '@/assets/awa-office-1f2.png';
+import awaOffice1f4 from '@/assets/awa-office-1f4.png';
+import awaOffice1f5 from '@/assets/awa-office-1f5.png';
+import awaOffice1f8 from '@/assets/awa-office-1f8.png';
 
-const categories = ['All', 'Residential'];
+const categories = ['All', 'Residential', 'Office'];
 
 // Sample project data - in a real app, this would come from a database
 const projects = [
@@ -223,6 +233,29 @@ const projects = [
       lakesGuest,
       lakesMasterBath,
       lakesFoyer,
+    ],
+  },
+  {
+    id: 9,
+    title: 'AWA OFFICE',
+    category: 'Office',
+    location: 'Petaling Jaya, Selangor',
+    year: '2025',
+    area: '3,000 sq ft',
+    image: awaOfficeGf4,
+    description: 'Professional office space featuring modern workstations, collaborative meeting rooms, elegant reception area, and functional display zones showcasing material samples and lighting solutions.',
+    tags: ['Commercial', 'Office', 'Professional'],
+    gallery: [
+      awaOfficeGf1,
+      awaOfficeGf2,
+      awaOfficeGf4,
+      awaOfficeGf5,
+      awaOfficeGf6,
+      awaOffice1f1,
+      awaOffice1f2,
+      awaOffice1f4,
+      awaOffice1f5,
+      awaOffice1f8,
     ],
   },
 ];

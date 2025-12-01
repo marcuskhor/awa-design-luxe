@@ -59,8 +59,18 @@ import lakesStudy from '@/assets/lakes-study.png';
 import lakesDryKitchen from '@/assets/lakes-dry-kitchen.png';
 import lakesFoyer from '@/assets/lakes-foyer.png';
 import lakesGuest from '@/assets/lakes-guest.png';
+import awaOfficeGf1 from '@/assets/awa-office-gf1.png';
+import awaOfficeGf2 from '@/assets/awa-office-gf2.png';
+import awaOfficeGf4 from '@/assets/awa-office-gf4.png';
+import awaOfficeGf5 from '@/assets/awa-office-gf5.png';
+import awaOfficeGf6 from '@/assets/awa-office-gf6.png';
+import awaOffice1f1 from '@/assets/awa-office-1f1.png';
+import awaOffice1f2 from '@/assets/awa-office-1f2.png';
+import awaOffice1f4 from '@/assets/awa-office-1f4.png';
+import awaOffice1f5 from '@/assets/awa-office-1f5.png';
+import awaOffice1f8 from '@/assets/awa-office-1f8.png';
 
-const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Bathrooms', 'Laundry Room', 'Altar', 'Foyer', 'Storage'];
+const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Bathrooms', 'Laundry Room', 'Altar', 'Foyer', 'Storage', 'Office'];
 
 // Gallery data
 const galleryImages = [
@@ -448,6 +458,76 @@ const galleryImages = [
     category: 'Living Rooms',
     title: 'LAKES - Living Area',
     description: 'Spacious living area with contemporary design',
+  },
+  {
+    id: 56,
+    src: awaOfficeGf1,
+    category: 'Office',
+    title: 'AWA OFFICE - Ground Floor Workstation',
+    description: 'Modern open workspace with material display',
+  },
+  {
+    id: 57,
+    src: awaOfficeGf2,
+    category: 'Office',
+    title: 'AWA OFFICE - Ground Floor Pantry Area',
+    description: 'Functional office pantry with storage solutions',
+  },
+  {
+    id: 58,
+    src: awaOfficeGf4,
+    category: 'Office',
+    title: 'AWA OFFICE - Reception Lounge',
+    description: 'Elegant reception area with partner showcase',
+  },
+  {
+    id: 59,
+    src: awaOfficeGf5,
+    category: 'Office',
+    title: 'AWA OFFICE - Client Lounge',
+    description: 'Comfortable lounge with material samples display',
+  },
+  {
+    id: 60,
+    src: awaOfficeGf6,
+    category: 'Office',
+    title: 'AWA OFFICE - Small Meeting Room',
+    description: 'Compact meeting room with whiteboard and display',
+  },
+  {
+    id: 61,
+    src: awaOffice1f1,
+    category: 'Office',
+    title: 'AWA OFFICE - First Floor Lounge',
+    description: 'Contemporary lounge with feature wall design',
+  },
+  {
+    id: 62,
+    src: awaOffice1f2,
+    category: 'Office',
+    title: 'AWA OFFICE - Consultation Area',
+    description: 'Modern consultation space with bar seating',
+  },
+  {
+    id: 63,
+    src: awaOffice1f4,
+    category: 'Office',
+    title: 'AWA OFFICE - Large Conference Room',
+    description: 'Professional conference room with display screen',
+  },
+  {
+    id: 64,
+    src: awaOffice1f5,
+    category: 'Office',
+    title: 'AWA OFFICE - Meeting Room',
+    description: 'Spacious meeting room with glass partition',
+  },
+  {
+    id: 65,
+    src: awaOffice1f8,
+    category: 'Office',
+    title: 'AWA OFFICE - Display Gallery',
+    description: 'Lighting and hardware sample display area',
   },
 ];
 
