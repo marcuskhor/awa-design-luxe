@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
+import SEO from '@/components/SEO';
 import kitchenImage from '@/assets/kitchen-design.jpg';
 import bedroomImage from '@/assets/bedroom-design.jpg';
 import officeImage from '@/assets/office-design.jpg';
@@ -107,6 +108,12 @@ const additionalServices = [
 const Services = () => {
   return (
     <Layout>
+      <SEO 
+        title="Interior Design & Renovation Services | AWA Design Petaling Jaya"
+        description="Professional interior design services in Petaling Jaya - residential design, commercial spaces, kitchen & bathroom renovation. AWA Design & Build offers complete design and build solutions."
+        keywords="interior design services PJ, renovation services Petaling Jaya, kitchen renovation PJ, bathroom renovation Petaling Jaya, residential interior design, commercial interior design Malaysia, AWA design services, home renovation Selangor"
+        canonicalUrl="https://awadesign.com.my/#/services"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[85vh] flex items-center">
         <div 

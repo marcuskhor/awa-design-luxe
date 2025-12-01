@@ -3,6 +3,7 @@ import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
+import SEO from '@/components/SEO';
 import arunyaKitchen from '@/assets/arunya-kitchen.png';
 import arunyaLiving from '@/assets/arunya-living.png';
 import arunyaYardBlend from '@/assets/arunya-yard-blend.png';
@@ -483,6 +484,12 @@ const Gallery = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Interior Design Gallery | AWA Design & Build Petaling Jaya"
+        description="Browse AWA Design & Build's gallery of stunning interior designs - bedrooms, living rooms, kitchens, bathrooms, and more. Get inspired for your renovation project in Petaling Jaya."
+        keywords="interior design gallery, AWA design gallery, kitchen design photos, bedroom design Malaysia, living room design PJ, bathroom renovation gallery, Petaling Jaya interior design photos"
+        canonicalUrl="https://awadesign.com.my/#/gallery"
+      />
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-luxury-cream">
         <div className="container mx-auto px-4">

@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
+import SEO from '@/components/SEO';
 import heroImage from '@/assets/hero-interior.jpg';
 import kitchenImage from '@/assets/kitchen-design.jpg';
 import bedroomImage from '@/assets/bedroom-design.jpg';
@@ -94,6 +95,12 @@ const certificates = [
 const Index = () => {
   return (
     <Layout>
+      <SEO 
+        title="AWA Design & Build | Interior Design & Renovation Contractor Petaling Jaya"
+        description="AWA Design & Build SDN BHD - Your trusted interior design & renovation contractor in Petaling Jaya (PJ), Malaysia. 15+ years experience, 500+ happy clients. Kitchen, bathroom, residential & commercial renovation."
+        keywords="AWA, AWA design, AWA design and build, AWA renovation, AWA contractor, Petaling Jaya renovation, PJ renovation, interior design Malaysia, interior design Petaling Jaya, renovation contractor PJ, home renovation PJ, kitchen renovation Petaling Jaya"
+        canonicalUrl="https://awadesign.com.my/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center hero-gradient">
         <div 
