@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
+import SEO from '@/components/SEO';
 import arunyaKitchen from '@/assets/arunya-kitchen.png';
 import arunyaLiving from '@/assets/arunya-living.png';
 import arunyaYardBlend from '@/assets/arunya-yard-blend.png';
@@ -267,6 +268,12 @@ const Projects = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Past Projects Portfolio | AWA Design & Build Interior Design PJ"
+        description="View AWA Design & Build's portfolio of completed interior design and renovation projects in Petaling Jaya, Malaysia. Residential, commercial, kitchen, bathroom renovations."
+        keywords="AWA design portfolio, interior design projects PJ, renovation projects Petaling Jaya, home renovation before after, AWA design and build projects, interior design Malaysia portfolio"
+        canonicalUrl="https://awadesign.com.my/#/projects"
+      />
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-luxury-cream">
         <div className="container mx-auto px-4">

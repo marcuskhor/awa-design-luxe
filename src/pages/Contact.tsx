@@ -7,6 +7,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
+import SEO from '@/components/SEO';
 import officeImage from '@/assets/office-design.jpg';
 
 const contactInfo = [
@@ -80,6 +81,12 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Contact AWA Design & Build | Interior Design Consultation Petaling Jaya"
+        description="Contact AWA Design & Build for a free interior design consultation. Visit our showroom in Petaling Jaya or call us for renovation quotes. Located at Jalan SS 7/26, PJ."
+        keywords="contact AWA design, interior design consultation PJ, renovation quote Petaling Jaya, AWA design and build contact, interior designer phone number Malaysia, design consultation Selangor"
+        canonicalUrl="https://awadesign.com.my/#/contact"
+      />
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-luxury-cream">
         <div className="container mx-auto px-4">

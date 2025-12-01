@@ -1,6 +1,7 @@
 import { Users, Award, Target, Heart } from 'lucide-react';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
+import SEO from '@/components/SEO';
 import heroImage from '@/assets/hero-interior.jpg';
 
 const values = [
@@ -29,6 +30,12 @@ const values = [
 const About = () => {
   return (
     <Layout>
+      <SEO 
+        title="About AWA Design & Build | Interior Design Company Petaling Jaya"
+        description="Learn about AWA Design & Build SDN BHD - a trusted interior design and renovation company in Petaling Jaya, Malaysia. 15+ years experience creating beautiful spaces."
+        keywords="AWA design company, interior design company PJ, about AWA design and build, renovation company Petaling Jaya, interior designer Malaysia, AWA contractor history"
+        canonicalUrl="https://awadesign.com.my/#/about"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center">
         <div 
