@@ -68,9 +68,13 @@ import awaOfficeGf5 from '@/assets/awa-office-gf5.png';
 import awaOfficeGf6 from '@/assets/awa-office-gf6.png';
 import awaOffice1f1 from '@/assets/awa-office-1f1.png';
 import awaOffice1f2 from '@/assets/awa-office-1f2.png';
+import awaOffice1f3 from '@/assets/awa-office-1f3.png';
 import awaOffice1f4 from '@/assets/awa-office-1f4.png';
 import awaOffice1f5 from '@/assets/awa-office-1f5.png';
+import awaOffice1f6 from '@/assets/awa-office-1f6.png';
 import awaOffice1f8 from '@/assets/awa-office-1f8.png';
+import awaOfficeGf3 from '@/assets/awa-office-gf3.png';
+import awaOfficeLogo from '@/assets/awa-office-logo.png';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -246,15 +250,19 @@ const projects = [
     description: 'Professional office space featuring modern workstations, collaborative meeting rooms, elegant reception area, and functional display zones showcasing material samples and lighting solutions.',
     tags: ['Commercial', 'Office', 'Professional'],
     gallery: [
+      awaOfficeLogo,
       awaOfficeGf1,
       awaOfficeGf2,
+      awaOfficeGf3,
       awaOfficeGf4,
       awaOfficeGf5,
       awaOfficeGf6,
       awaOffice1f1,
       awaOffice1f2,
+      awaOffice1f3,
       awaOffice1f4,
       awaOffice1f5,
+      awaOffice1f6,
       awaOffice1f8,
     ],
   },

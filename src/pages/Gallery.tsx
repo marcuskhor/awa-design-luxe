@@ -66,9 +66,13 @@ import awaOfficeGf5 from '@/assets/awa-office-gf5.png';
 import awaOfficeGf6 from '@/assets/awa-office-gf6.png';
 import awaOffice1f1 from '@/assets/awa-office-1f1.png';
 import awaOffice1f2 from '@/assets/awa-office-1f2.png';
+import awaOffice1f3 from '@/assets/awa-office-1f3.png';
 import awaOffice1f4 from '@/assets/awa-office-1f4.png';
 import awaOffice1f5 from '@/assets/awa-office-1f5.png';
+import awaOffice1f6 from '@/assets/awa-office-1f6.png';
 import awaOffice1f8 from '@/assets/awa-office-1f8.png';
+import awaOfficeGf3 from '@/assets/awa-office-gf3.png';
+import awaOfficeLogo from '@/assets/awa-office-logo.png';
 
 const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Bathrooms', 'Laundry Room', 'Altar', 'Foyer', 'Storage', 'Office'];
 
@@ -528,6 +532,34 @@ const galleryImages = [
     category: 'Office',
     title: 'AWA OFFICE - Display Gallery',
     description: 'Lighting and hardware sample display area',
+  },
+  {
+    id: 66,
+    src: awaOfficeLogo,
+    category: 'Office',
+    title: 'AWA OFFICE - Logo Reception',
+    description: 'AWA branded reception entrance with logo wall',
+  },
+  {
+    id: 67,
+    src: awaOffice1f3,
+    category: 'Office',
+    title: 'AWA OFFICE - Pantry Bar',
+    description: 'Modern pantry area with bar counter seating',
+  },
+  {
+    id: 68,
+    src: awaOffice1f6,
+    category: 'Office',
+    title: 'AWA OFFICE - Open Workspace',
+    description: 'Spacious open workspace with material display',
+  },
+  {
+    id: 69,
+    src: awaOfficeGf3,
+    category: 'Office',
+    title: 'AWA OFFICE - Executive Office',
+    description: 'Professional executive office with dual workstations',
   },
 ];
 
