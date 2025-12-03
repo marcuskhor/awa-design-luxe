@@ -75,6 +75,10 @@ import awaOffice1f6 from '@/assets/awa-office-1f6.png';
 import awaOffice1f8 from '@/assets/awa-office-1f8.png';
 import awaOfficeGf3 from '@/assets/awa-office-gf3.png';
 import awaOfficeLogo from '@/assets/awa-office-logo.png';
+import dvineB1 from '@/assets/dvine-b1.png';
+import dvineMb from '@/assets/dvine-mb.png';
+import dvineLiv from '@/assets/dvine-liv.png';
+import dvineKit from '@/assets/dvine-kit.png';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -264,6 +268,23 @@ const projects = [
       awaOffice1f5,
       awaOffice1f6,
       awaOffice1f8,
+    ],
+  },
+  {
+    id: 10,
+    title: "D'VINE",
+    category: 'Residential',
+    location: 'Malaysia',
+    year: '2025',
+    area: '1,200 sq ft',
+    image: dvineLiv,
+    description: 'Contemporary residential design featuring elegant living space with marble accents, modern bedroom designs, and functional kitchen with premium finishes.',
+    tags: ['Modern', 'Contemporary', 'Elegant'],
+    gallery: [
+      dvineLiv,
+      dvineMb,
+      dvineB1,
+      dvineKit,
     ],
   },
 ];
