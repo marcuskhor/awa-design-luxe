@@ -73,6 +73,10 @@ import awaOffice1f6 from '@/assets/awa-office-1f6.png';
 import awaOffice1f8 from '@/assets/awa-office-1f8.png';
 import awaOfficeGf3 from '@/assets/awa-office-gf3.png';
 import awaOfficeLogo from '@/assets/awa-office-logo.png';
+import dvineB1 from '@/assets/dvine-b1.png';
+import dvineMb from '@/assets/dvine-mb.png';
+import dvineLiv from '@/assets/dvine-liv.png';
+import dvineKit from '@/assets/dvine-kit.png';
 
 const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Bathrooms', 'Laundry Room', 'Altar', 'Foyer', 'Storage', 'Office'];
 
@@ -560,6 +564,34 @@ const galleryImages = [
     category: 'Office',
     title: 'AWA OFFICE - Executive Office',
     description: 'Professional executive office with dual workstations',
+  },
+  {
+    id: 70,
+    src: dvineB1,
+    category: 'Bedrooms',
+    title: "D'VINE - Bedroom",
+    description: 'Cozy single bedroom with arched headboard design',
+  },
+  {
+    id: 71,
+    src: dvineMb,
+    category: 'Bedrooms',
+    title: "D'VINE - Master Bedroom",
+    description: 'Elegant master bedroom with pendant lighting',
+  },
+  {
+    id: 72,
+    src: dvineLiv,
+    category: 'Living Rooms',
+    title: "D'VINE - Living Room",
+    description: 'Contemporary living space with marble TV feature wall',
+  },
+  {
+    id: 73,
+    src: dvineKit,
+    category: 'Kitchens',
+    title: "D'VINE - Kitchen",
+    description: 'Modern kitchen with premium appliances and marble backsplash',
   },
 ];
 
