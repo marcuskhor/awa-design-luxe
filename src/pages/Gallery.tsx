@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
 import SEO from '@/components/SEO';
@@ -712,48 +713,65 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Lightbox */}
-      {selectedImage !== null && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4">
-          <div className="relative max-w-4xl max-h-full">
-            <img
-              src={filteredImages[selectedImage].src}
-              alt={filteredImages[selectedImage].title}
-              className="max-w-full max-h-[80vh] object-contain rounded-lg"
-            />
-            
-            {/* Navigation Buttons */}
-            <button
-              onClick={() => navigateLightbox('prev')}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors duration-200"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            
-            <button
-              onClick={() => navigateLightbox('next')}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors duration-200"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
-            
-            {/* Close Button */}
-            <button
-              onClick={closeLightbox}
-              className="absolute top-4 right-4 w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors duration-200"
-            >
-              <X className="w-5 h-5" />
-            </button>
-            
-            {/* Image Info */}
-            <div className="absolute bottom-4 left-4 right-4 bg-black/50 rounded-lg p-4 text-white">
-              <h3 className="text-lg font-semibold mb-1">{filteredImages[selectedImage].title}</h3>
-              <p className="text-white/80">{filteredImages[selectedImage].description}</p>
-              <p className="text-sm text-primary mt-2">{filteredImages[selectedImage].category}</p>
+      {/* Lightbox Modal */}
+      <Dialog open={selectedImage !== null} onOpenChange={closeLightbox}>
+        <DialogContent className="max-w-5xl w-full h-[90vh] p-0 bg-background border-0">
+          {selectedImage !== null && (
+            <div className="relative w-full h-full flex flex-col">
+              {/* Header */}
+              <div className="absolute top-0 left-0 right-0 z-10 bg-gradient-to-b from-black/80 to-transparent p-6">
+                <div className="flex items-start justify-between">
+                  <div className="text-white">
+                    <h2 className="text-2xl font-bold mb-2">{filteredImages[selectedImage].title}</h2>
+                    <p className="text-white/80 text-sm">
+                      {selectedImage + 1} / {filteredImages.length} • {filteredImages[selectedImage].category}
+                    </p>
+                  </div>
+                  <button
+                    onClick={closeLightbox}
+                    className="w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors duration-200"
+                  >
+                    <X className="w-5 h-5" />
+                  </button>
+                </div>
+              </div>
+
+              {/* Image */}
+              <div className="flex-1 flex items-center justify-center bg-black/95 p-4">
+                <img
+                  src={filteredImages[selectedImage].src}
+                  alt={filteredImages[selectedImage].title}
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+
+              {/* Navigation Buttons */}
+              {filteredImages.length > 1 && (
+                <>
+                  <button
+                    onClick={() => navigateLightbox('prev')}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-all duration-200 hover:scale-110"
+                  >
+                    <ChevronLeft className="w-6 h-6" />
+                  </button>
+                  
+                  <button
+                    onClick={() => navigateLightbox('next')}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-all duration-200 hover:scale-110"
+                  >
+                    <ChevronRight className="w-6 h-6" />
+                  </button>
+                </>
+              )}
+
+              {/* Image Info */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                <p className="text-white/90">{filteredImages[selectedImage].description}</p>
+              </div>
             </div>
-          </div>
-        </div>
-      )}
+          )}
+        </DialogContent>
+      </Dialog>
 
       {/* Stats Section */}
       <section className="py-24 bg-luxury-cream">
