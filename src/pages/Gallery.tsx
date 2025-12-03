@@ -78,6 +78,14 @@ import dvineB1 from '@/assets/dvine-b1.png';
 import dvineMb from '@/assets/dvine-mb.png';
 import dvineLiv from '@/assets/dvine-liv.png';
 import dvineKit from '@/assets/dvine-kit.png';
+import stellaDining from '@/assets/stella-dining.png';
+import stellaKit from '@/assets/stella-kit.png';
+import stellaLiv from '@/assets/stella-liv.png';
+import stellaSofa from '@/assets/stella-sofa.png';
+import stellaMbWall from '@/assets/stella-mb-wall.png';
+import stellaMbBed from '@/assets/stella-mb-bed.png';
+import stellaMbWardrobe from '@/assets/stella-mb-wardrobe.png';
+import stellaStudy from '@/assets/stella-study.png';
 
 const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Bathrooms', 'Laundry Room', 'Altar', 'Foyer', 'Storage', 'Office'];
 
@@ -593,6 +601,62 @@ const galleryImages = [
     category: 'Kitchens',
     title: "D'VINE - Kitchen",
     description: 'Modern kitchen with premium appliances and marble backsplash',
+  },
+  {
+    id: 74,
+    src: stellaDining,
+    category: 'Dining',
+    title: '8HT STELLA - Dining',
+    description: 'Elegant dining area with modern design',
+  },
+  {
+    id: 75,
+    src: stellaKit,
+    category: 'Kitchens',
+    title: '8HT STELLA - Kitchen',
+    description: 'Contemporary kitchen with premium finishes',
+  },
+  {
+    id: 76,
+    src: stellaLiv,
+    category: 'Living Rooms',
+    title: '8HT STELLA - Living Room',
+    description: 'Modern living space with elegant design',
+  },
+  {
+    id: 77,
+    src: stellaSofa,
+    category: 'Living Rooms',
+    title: '8HT STELLA - Sofa Area',
+    description: 'Stylish sofa arrangement with contemporary aesthetic',
+  },
+  {
+    id: 78,
+    src: stellaMbWall,
+    category: 'Bedrooms',
+    title: '8HT STELLA - Master Bedroom Wall',
+    description: 'Sophisticated master bedroom feature wall',
+  },
+  {
+    id: 79,
+    src: stellaMbBed,
+    category: 'Bedrooms',
+    title: '8HT STELLA - Master Bedroom',
+    description: 'Luxurious master bedroom with elegant bed design',
+  },
+  {
+    id: 80,
+    src: stellaMbWardrobe,
+    category: 'Bedrooms',
+    title: '8HT STELLA - Master Wardrobe',
+    description: 'Modern walk-in wardrobe with ample storage',
+  },
+  {
+    id: 81,
+    src: stellaStudy,
+    category: 'Bedrooms',
+    title: '8HT STELLA - Study',
+    description: 'Contemporary study room with built-in desk',
   },
 ];
 
