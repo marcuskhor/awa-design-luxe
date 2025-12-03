@@ -79,6 +79,14 @@ import dvineB1 from '@/assets/dvine-b1.png';
 import dvineMb from '@/assets/dvine-mb.png';
 import dvineLiv from '@/assets/dvine-liv.png';
 import dvineKit from '@/assets/dvine-kit.png';
+import stellaDining from '@/assets/stella-dining.png';
+import stellaKit from '@/assets/stella-kit.png';
+import stellaLiv from '@/assets/stella-liv.png';
+import stellaSofa from '@/assets/stella-sofa.png';
+import stellaMbWall from '@/assets/stella-mb-wall.png';
+import stellaMbBed from '@/assets/stella-mb-bed.png';
+import stellaMbWardrobe from '@/assets/stella-mb-wardrobe.png';
+import stellaStudy from '@/assets/stella-study.png';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -285,6 +293,27 @@ const projects = [
       dvineMb,
       dvineB1,
       dvineKit,
+    ],
+  },
+  {
+    id: 11,
+    title: '8HT STELLA',
+    category: 'Residential',
+    location: 'Malaysia',
+    year: '2025',
+    area: '1,400 sq ft',
+    image: stellaLiv,
+    description: 'Modern residential design featuring sophisticated living spaces, elegant dining area, contemporary kitchen, luxurious bedrooms with study, and stylish wardrobe solutions.',
+    tags: ['Modern', 'Elegant', 'Contemporary'],
+    gallery: [
+      stellaLiv,
+      stellaSofa,
+      stellaDining,
+      stellaKit,
+      stellaMbWall,
+      stellaMbBed,
+      stellaMbWardrobe,
+      stellaStudy,
     ],
   },
 ];
