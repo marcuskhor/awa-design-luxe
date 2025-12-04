@@ -297,7 +297,7 @@ const projects = [
   },
   {
     id: 11,
-    title: '8HT STELLA',
+    title: '8TH STELLA',
     category: 'Residential',
     location: 'Malaysia',
     year: '2025',
