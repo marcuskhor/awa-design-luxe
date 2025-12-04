@@ -86,6 +86,9 @@ import stellaMbWall from '@/assets/stella-mb-wall.png';
 import stellaMbBed from '@/assets/stella-mb-bed.png';
 import stellaMbWardrobe from '@/assets/stella-mb-wardrobe.png';
 import stellaStudy from '@/assets/stella-study.png';
+import sv2Dining from '@/assets/sv2-dining.png';
+import sv2Liv from '@/assets/sv2-liv.png';
+import sv2Mb from '@/assets/sv2-mb.png';
 
 const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Bathrooms', 'Laundry Room', 'Altar', 'Foyer', 'Storage', 'Office'];
 
@@ -657,6 +660,27 @@ const galleryImages = [
     category: 'Bedrooms',
     title: '8TH STELLA - Study',
     description: 'Contemporary study room with built-in desk',
+  },
+  {
+    id: 82,
+    src: sv2Dining,
+    category: 'Dining',
+    title: 'Sunway Velocity 2 - Dining',
+    description: 'Modern dining area with sleek pendant lighting and island counter',
+  },
+  {
+    id: 83,
+    src: sv2Liv,
+    category: 'Living Rooms',
+    title: 'Sunway Velocity 2 - Living Room',
+    description: 'Contemporary living space with elegant TV console and natural lighting',
+  },
+  {
+    id: 84,
+    src: sv2Mb,
+    category: 'Bedrooms',
+    title: 'Sunway Velocity 2 - Master Bedroom',
+    description: 'Comfortable bedroom with built-in wardrobe and vanity area',
   },
 ];
 

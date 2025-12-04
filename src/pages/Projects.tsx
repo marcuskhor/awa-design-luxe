@@ -87,6 +87,9 @@ import stellaMbWall from '@/assets/stella-mb-wall.png';
 import stellaMbBed from '@/assets/stella-mb-bed.png';
 import stellaMbWardrobe from '@/assets/stella-mb-wardrobe.png';
 import stellaStudy from '@/assets/stella-study.png';
+import sv2Dining from '@/assets/sv2-dining.png';
+import sv2Liv from '@/assets/sv2-liv.png';
+import sv2Mb from '@/assets/sv2-mb.png';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -314,6 +317,22 @@ const projects = [
       stellaMbBed,
       stellaMbWardrobe,
       stellaStudy,
+    ],
+  },
+  {
+    id: 12,
+    title: 'Sunway Velocity 2',
+    category: 'Residential',
+    location: 'Kuala Lumpur, Malaysia',
+    year: '2025',
+    area: '1,000 sq ft',
+    image: sv2Liv,
+    description: 'Contemporary condominium with modern living spaces, elegant dining area, and comfortable bedroom design.',
+    tags: ['Modern', 'Contemporary', 'Minimalist'],
+    gallery: [
+      sv2Liv,
+      sv2Dining,
+      sv2Mb,
     ],
   },
 ];
