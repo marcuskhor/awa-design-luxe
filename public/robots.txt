@@ -3,10 +3,13 @@
 
 User-agent: Googlebot
 Allow: /
+Allow: /favicon.png
+Allow: /manifest.json
 Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Allow: /favicon.png
 Crawl-delay: 1
 
 User-agent: Twitterbot
@@ -17,6 +20,7 @@ Allow: /
 
 User-agent: *
 Allow: /
+Allow: /favicon.png
 
 # Sitemap location
 Sitemap: https://awadesign.com.my/sitemap.xml
