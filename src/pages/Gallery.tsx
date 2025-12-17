@@ -96,6 +96,13 @@ import stellaStudy from '@/assets/stella-study.png';
 import sv2Dining from '@/assets/sv2-dining.png';
 import sv2Liv from '@/assets/sv2-liv.png';
 import sv2Mb from '@/assets/sv2-mb.png';
+import spKidsBedroom from '@/assets/sp-kids-bedroom.jpg';
+import spMasterBedroom from '@/assets/sp-master-bedroom.jpg';
+import spGirlsBedroom from '@/assets/sp-girls-bedroom.jpg';
+import spLiving from '@/assets/sp-living.jpg';
+import spDining from '@/assets/sp-dining.jpg';
+import spKitchen1 from '@/assets/sp-kitchen-1.jpg';
+import spKitchen2 from '@/assets/sp-kitchen-2.jpg';
 
 const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Bathrooms', 'Laundry Room', 'Altar', 'Foyer', 'Storage', 'Office'];
 
@@ -716,6 +723,55 @@ const galleryImages = [
     category: 'Bedrooms',
     title: 'Sunway Velocity 2 - Master Bedroom',
     description: 'Comfortable bedroom with built-in wardrobe and vanity area',
+  },
+  {
+    id: 85,
+    src: spKidsBedroom,
+    category: 'Bedrooms',
+    title: 'SUNWAY PERDANA - Kids Bedroom',
+    description: 'Compact kids bedroom with study desk and glass wardrobe',
+  },
+  {
+    id: 86,
+    src: spMasterBedroom,
+    category: 'Bedrooms',
+    title: 'SUNWAY PERDANA - Master Bedroom',
+    description: 'Elegant master bedroom with walk-in wardrobe and cove lighting',
+  },
+  {
+    id: 87,
+    src: spGirlsBedroom,
+    category: 'Bedrooms',
+    title: 'SUNWAY PERDANA - Girls Bedroom',
+    description: 'Cozy bedroom with vanity desk and glass sliding wardrobe',
+  },
+  {
+    id: 88,
+    src: spLiving,
+    category: 'Living Rooms',
+    title: 'SUNWAY PERDANA - Living Room',
+    description: 'Contemporary living space with minimalist TV console and natural lighting',
+  },
+  {
+    id: 89,
+    src: spDining,
+    category: 'Dining',
+    title: 'SUNWAY PERDANA - Dining',
+    description: 'Modern dining area with marble table and elegant wall decor',
+  },
+  {
+    id: 90,
+    src: spKitchen1,
+    category: 'Kitchens',
+    title: 'SUNWAY PERDANA - Kitchen 1',
+    description: 'Functional kitchen with built-in oven and premium appliances',
+  },
+  {
+    id: 91,
+    src: spKitchen2,
+    category: 'Kitchens',
+    title: 'SUNWAY PERDANA - Kitchen 2',
+    description: 'Contemporary wet kitchen with sage green cabinetry and fridge enclosure',
   },
 ];
 

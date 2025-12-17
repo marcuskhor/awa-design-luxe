@@ -97,6 +97,13 @@ import stellaStudy from '@/assets/stella-study.png';
 import sv2Dining from '@/assets/sv2-dining.png';
 import sv2Liv from '@/assets/sv2-liv.png';
 import sv2Mb from '@/assets/sv2-mb.png';
+import spKidsBedroom from '@/assets/sp-kids-bedroom.jpg';
+import spMasterBedroom from '@/assets/sp-master-bedroom.jpg';
+import spGirlsBedroom from '@/assets/sp-girls-bedroom.jpg';
+import spLiving from '@/assets/sp-living.jpg';
+import spDining from '@/assets/sp-dining.jpg';
+import spKitchen1 from '@/assets/sp-kitchen-1.jpg';
+import spKitchen2 from '@/assets/sp-kitchen-2.jpg';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -344,6 +351,26 @@ const projects = [
       sv2Liv,
       sv2Dining,
       sv2Mb,
+    ],
+  },
+  {
+    id: 13,
+    title: 'SUNWAY PERDANA',
+    category: 'Residential',
+    location: 'Petaling Jaya, Malaysia',
+    year: '2025',
+    area: '1,300 sq ft',
+    image: spLiving,
+    description: 'Modern residential design featuring elegant living space, contemporary bedrooms including master and kids rooms, stylish dining area, and functional kitchen with premium finishes.',
+    tags: ['Modern', 'Contemporary', 'Family'],
+    gallery: [
+      spLiving,
+      spDining,
+      spMasterBedroom,
+      spKidsBedroom,
+      spGirlsBedroom,
+      spKitchen1,
+      spKitchen2,
     ],
   },
 ];
