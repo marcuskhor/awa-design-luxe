@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ArrowRight, Award, Users, Calendar, Star, CheckCircle, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -128,13 +129,13 @@ const Index = () => {
             
             <ScrollAnimation animation="fade-in-up" delay={400}>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="btn-primary text-lg px-8 py-6">
+                <Link to="/contact" className="btn-primary text-lg px-8 py-4 rounded-lg font-medium inline-flex items-center">
                   Start Your Project
                   <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-                <Button size="lg" variant="outline-white" className="text-lg px-8 py-6">
+                </Link>
+                <Link to="/projects" className="border border-white text-white hover:bg-white hover:text-luxury-charcoal px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300">
                   View Our Work
-                </Button>
+                </Link>
               </div>
             </ScrollAnimation>
           </div>
@@ -477,13 +478,13 @@ const Index = () => {
               Contact us today for a consultation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="btn-primary text-lg px-8 py-6">
+              <Link to="/contact" className="btn-primary text-lg px-8 py-4 rounded-lg font-medium inline-flex items-center">
                 Get Free Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button size="lg" variant="outline-white" className="text-lg px-8 py-6">
+              </Link>
+              <a href="tel:+60179551698" className="border border-white text-white hover:bg-white hover:text-luxury-charcoal px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300">
                 Call: 017-9551698
-              </Button>
+              </a>
             </div>
           </ScrollAnimation>
         </div>

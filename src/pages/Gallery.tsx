@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -1009,12 +1010,12 @@ const Gallery = () => {
               Let's create something beautiful together. Contact us to discuss your project and start your design journey.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary px-8 py-4 rounded-lg text-lg font-medium">
+              <Link to="/contact" className="btn-primary px-8 py-4 rounded-lg text-lg font-medium">
                 Start Your Project
-              </button>
-              <button className="border border-white text-white hover:bg-white hover:text-luxury-charcoal px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300">
+              </Link>
+              <Link to="/contact" className="border border-white text-white hover:bg-white hover:text-luxury-charcoal px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300">
                 Contact Us Today
-              </button>
+              </Link>
             </div>
           </ScrollAnimation>
         </div>
