@@ -106,6 +106,9 @@ import spLiving from '@/assets/sp-living.jpg';
 import spDining from '@/assets/sp-dining.jpg';
 import spKitchen1 from '@/assets/sp-kitchen-1.jpg';
 import spKitchen2 from '@/assets/sp-kitchen-2.jpg';
+import dutaParkDining from '@/assets/duta-park-dining.png';
+import dutaParkLiving from '@/assets/duta-park-living.png';
+import dutaParkBedroom from '@/assets/duta-park-bedroom.jpg';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -373,6 +376,22 @@ const projects = [
       spGirlsBedroom,
       spKitchen1,
       spKitchen2,
+    ],
+  },
+  {
+    id: 14,
+    title: 'DUTA PARK',
+    category: 'Residential',
+    location: 'Kuala Lumpur, Malaysia',
+    year: '2024',
+    area: '1,200 sq ft',
+    image: dutaParkLiving,
+    description: 'Modern residential design featuring elegant living space, contemporary dining area, and sophisticated bedroom design with premium finishes.',
+    tags: ['Modern', 'Contemporary', 'Elegant'],
+    gallery: [
+      dutaParkLiving,
+      dutaParkDining,
+      dutaParkBedroom,
     ],
   },
 ];
