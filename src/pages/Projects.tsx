@@ -1,3 +1,4 @@
+// Projects page
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, MapPin, Square, X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
