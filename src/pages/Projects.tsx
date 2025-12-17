@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Calendar, MapPin, Square, X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -667,12 +668,12 @@ const Projects = () => {
               Let's discuss your project and explore how we can bring your vision to life with our expertise.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary px-8 py-4 rounded-lg text-lg font-medium">
+              <Link to="/contact" className="btn-primary px-8 py-4 rounded-lg text-lg font-medium">
                 Start Your Project
-              </button>
-              <button className="border border-white text-white hover:bg-white hover:text-luxury-charcoal px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300">
+              </Link>
+              <Link to="/contact" className="border border-white text-white hover:bg-white hover:text-luxury-charcoal px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300">
                 Contact Us Today
-              </button>
+              </Link>
             </div>
           </ScrollAnimation>
         </div>

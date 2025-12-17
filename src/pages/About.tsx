@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Users, Award, Target, Heart } from 'lucide-react';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
@@ -182,9 +183,9 @@ const About = () => {
               Let's discuss your project and see how we can bring your vision to life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary px-8 py-4 rounded-lg text-lg font-medium">
+              <Link to="/contact" className="btn-primary px-8 py-4 rounded-lg text-lg font-medium">
                 Contact Us Today
-              </button>
+              </Link>
             </div>
           </ScrollAnimation>
         </div>

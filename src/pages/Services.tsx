@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Home, Building, Utensils, Palette, Lightbulb, Hammer } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -361,12 +362,12 @@ const Services = () => {
               Contact us today to discuss your interior design needs and get a personalized consultation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary px-8 py-4 rounded-lg text-lg font-medium">
+              <Link to="/contact" className="btn-primary px-8 py-4 rounded-lg text-lg font-medium">
                 Get Free Consultation
-              </button>
-              <Button size="lg" variant="outline-white" className="text-lg px-8 py-6">
+              </Link>
+              <Link to="/projects" className="border border-white text-white hover:bg-white hover:text-luxury-charcoal px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300">
                 View Our Work
-              </Button>
+              </Link>
             </div>
           </ScrollAnimation>
         </div>
