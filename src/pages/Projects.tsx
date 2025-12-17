@@ -23,6 +23,13 @@ import pulseAltar from '@/assets/pulse-altar.png';
 import dutaBedroom from '@/assets/duta-bedroom.jpg';
 import dutaDining from '@/assets/duta-dining.png';
 import dutaLiving from '@/assets/duta-living.png';
+import dutaMb from '@/assets/duta-mb.png';
+import dutaBed1 from '@/assets/duta-bed1.png';
+import dutaBed2 from '@/assets/duta-bed2.png';
+import dutaLiv2 from '@/assets/duta-liv2.png';
+import dutaDining2 from '@/assets/duta-dining2.png';
+import dutaKit1 from '@/assets/duta-kit1.png';
+import dutaKit2 from '@/assets/duta-kit2.png';
 import nidozFoyer1 from '@/assets/nidoz-foyer-1.png';
 import nidozFoyer2 from '@/assets/nidoz-foyer-2.png';
 import nidozLiv1 from '@/assets/nidoz-liv-1.png';
@@ -137,18 +144,22 @@ const projects = [
   },
   {
     id: 3,
-    title: 'DUTA PARK',
+    title: 'DUTA',
     category: 'Residential',
     location: 'Kuala Lumpur',
     year: '2024',
     area: '1,400 sq ft',
-    image: dutaLiving,
-    description: 'Modern residential interior featuring sophisticated bedroom design, elegant dining area, and contemporary living space with premium finishes.',
+    image: dutaLiv2,
+    description: 'Modern residential interior featuring sophisticated bedroom designs, elegant dining area, contemporary living space, and functional kitchen with premium finishes.',
     tags: ['Modern', 'Elegant', 'Contemporary'],
     gallery: [
-      dutaBedroom,
-      dutaDining,
-      dutaLiving,
+      dutaMb,
+      dutaBed1,
+      dutaBed2,
+      dutaLiv2,
+      dutaDining2,
+      dutaKit1,
+      dutaKit2,
     ],
   },
   {

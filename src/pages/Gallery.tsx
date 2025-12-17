@@ -22,6 +22,13 @@ import pulseAltar from '@/assets/pulse-altar.png';
 import dutaBedroom from '@/assets/duta-bedroom.jpg';
 import dutaDining from '@/assets/duta-dining.png';
 import dutaLiving from '@/assets/duta-living.png';
+import dutaMb from '@/assets/duta-mb.png';
+import dutaBed1 from '@/assets/duta-bed1.png';
+import dutaBed2 from '@/assets/duta-bed2.png';
+import dutaLiv2 from '@/assets/duta-liv2.png';
+import dutaDining2 from '@/assets/duta-dining2.png';
+import dutaKit1 from '@/assets/duta-kit1.png';
+import dutaKit2 from '@/assets/duta-kit2.png';
 import nidozFoyer1 from '@/assets/nidoz-foyer-1.png';
 import nidozFoyer2 from '@/assets/nidoz-foyer-2.png';
 import nidozLiv1 from '@/assets/nidoz-liv-1.png';
@@ -194,24 +201,52 @@ const galleryImages = [
   },
   {
     id: 15,
-    src: dutaBedroom,
+    src: dutaMb,
     category: 'Bedrooms',
-    title: 'DUTA PARK - Bedroom',
-    description: 'Elegant bedroom with modern furnishings',
+    title: 'DUTA - Master Bedroom',
+    description: 'Elegant master bedroom with slatted headboard and modern furnishings',
   },
   {
     id: 16,
-    src: dutaDining,
-    category: 'Dining',
-    title: 'DUTA PARK - Dining Area',
-    description: 'Contemporary dining space',
+    src: dutaBed1,
+    category: 'Bedrooms',
+    title: 'DUTA - Bedroom 1',
+    description: 'Contemporary bedroom with study area and natural lighting',
   },
   {
     id: 17,
-    src: dutaLiving,
+    src: dutaBed2,
+    category: 'Bedrooms',
+    title: 'DUTA - Bedroom 2',
+    description: 'Compact bedroom with built-in wardrobe and study desk',
+  },
+  {
+    id: 150,
+    src: dutaLiv2,
     category: 'Living Rooms',
-    title: 'DUTA PARK - Living Room',
-    description: 'Modern living area with elegant design',
+    title: 'DUTA - Living Room',
+    description: 'Modern living area with elegant TV console and display cabinet',
+  },
+  {
+    id: 151,
+    src: dutaDining2,
+    category: 'Dining',
+    title: 'DUTA - Dining Area',
+    description: 'Contemporary dining space with decorative lighting and marble table',
+  },
+  {
+    id: 152,
+    src: dutaKit1,
+    category: 'Kitchens',
+    title: 'DUTA - Kitchen 1',
+    description: 'Functional kitchen with modern cabinetry and appliances',
+  },
+  {
+    id: 153,
+    src: dutaKit2,
+    category: 'Kitchens',
+    title: 'DUTA - Kitchen 2',
+    description: 'Contemporary kitchen with glass cabinet display and sink area',
   },
   {
     id: 18,
