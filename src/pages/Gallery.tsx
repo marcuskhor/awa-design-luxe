@@ -104,6 +104,9 @@ import spLiving from '@/assets/sp-living.jpg';
 import spDining from '@/assets/sp-dining.jpg';
 import spKitchen1 from '@/assets/sp-kitchen-1.jpg';
 import spKitchen2 from '@/assets/sp-kitchen-2.jpg';
+import dutaParkDining from '@/assets/duta-park-dining.png';
+import dutaParkLiving from '@/assets/duta-park-living.png';
+import dutaParkBedroom from '@/assets/duta-park-bedroom.jpg';
 
 const categories = ['All', 'Bedrooms', 'Living Rooms', 'Dining', 'Master Bedroom', 'Kitchens', 'Bathrooms', 'Laundry Room', 'Altar', 'Foyer', 'Storage', 'Office'];
 
@@ -773,6 +776,27 @@ const galleryImages = [
     category: 'Kitchens',
     title: 'SUNWAY PERDANA - Kitchen 2',
     description: 'Contemporary wet kitchen with sage green cabinetry and fridge enclosure',
+  },
+  {
+    id: 92,
+    src: dutaParkBedroom,
+    category: 'Bedrooms',
+    title: 'DUTA PARK - Bedroom',
+    description: 'Elegant bedroom with built-in wardrobe and modern vanity area',
+  },
+  {
+    id: 93,
+    src: dutaParkLiving,
+    category: 'Living Rooms',
+    title: 'DUTA PARK - Living Room',
+    description: 'Contemporary living space with marble TV feature wall and wood panel accents',
+  },
+  {
+    id: 94,
+    src: dutaParkDining,
+    category: 'Dining',
+    title: 'DUTA PARK - Dining',
+    description: 'Modern dining area with pendant lighting and marble table',
   },
 ];
 
