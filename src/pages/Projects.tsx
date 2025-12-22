@@ -559,7 +559,9 @@ const projects = [
     category: 'Residential',
     location: 'Petaling Jaya',
     year: '2024',
+    area: '1,200 sq ft',
     description: 'Modern apartment renovation featuring contemporary design with marble TV feature wall, custom cabinetry, and cohesive blue accent theme throughout.',
+    tags: ['Modern', 'Contemporary', 'Elegant'],
     image: sv2Liv2,
     gallery: [
       sv2Liv2,
