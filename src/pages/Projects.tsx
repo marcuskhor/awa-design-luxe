@@ -162,6 +162,7 @@ import serene1DryKitchen from '@/assets/serene1-dry-kitchen.jpg';
 import serene1Living4 from '@/assets/serene1-living-4.jpg';
 import serene1Study from '@/assets/serene1-study.jpg';
 import serene1TvWall2 from '@/assets/serene1-tv-wall-2.jpg';
+import serene1Bedroom3 from '@/assets/serene1-bedroom-3.jpg';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -524,6 +525,7 @@ const projects = [
       serene1Living4,
       serene1Study,
       serene1TvWall2,
+      serene1Bedroom3,
     ],
   },
 ];
