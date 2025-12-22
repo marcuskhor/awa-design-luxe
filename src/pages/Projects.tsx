@@ -134,6 +134,14 @@ import serene1Bedroom2 from '@/assets/serene1-bedroom-2.jpg';
 import serene1Kids from '@/assets/serene1-kids.jpg';
 import serene1Wardrobe from '@/assets/serene1-wardrobe.jpg';
 import serene1Kitchen2 from '@/assets/serene1-kitchen-2.jpg';
+import serene1Master from '@/assets/serene1-master.jpg';
+import serene1Kitchen3 from '@/assets/serene1-kitchen-3.jpg';
+import serene1Kitchen4 from '@/assets/serene1-kitchen-4.jpg';
+import serene1Pantry from '@/assets/serene1-pantry.jpg';
+import serene1Wardrobe2 from '@/assets/serene1-wardrobe-2.jpg';
+import serene1Living1 from '@/assets/serene1-living-1.jpg';
+import serene1Living2 from '@/assets/serene1-living-2.jpg';
+import serene1Kitchen5 from '@/assets/serene1-kitchen-5.jpg';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -458,15 +466,23 @@ const projects = [
     description: 'Elegant residential design featuring classic wainscoting dining area, luxurious bathroom with bathtub, custom bookshelf wall unit, modern kitchen with built-in appliances, and charming kids bedroom.',
     tags: ['Elegant', 'Classic', 'Modern'],
     gallery: [
+      serene1Living1,
+      serene1Living2,
       serene1Dining,
       serene1Bathroom,
       serene1Kitchen,
       serene1Kitchen2,
+      serene1Kitchen3,
+      serene1Kitchen4,
+      serene1Kitchen5,
+      serene1Pantry,
+      serene1Master,
       serene1Bookshelf,
       serene1Bedroom1,
       serene1Bedroom2,
       serene1Kids,
       serene1Wardrobe,
+      serene1Wardrobe2,
       serene1Laundry,
     ],
   },
