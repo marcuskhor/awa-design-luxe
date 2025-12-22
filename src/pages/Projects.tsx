@@ -119,6 +119,11 @@ import uptownHallway2 from '@/assets/uptown-hallway-2.jpg';
 import uptownLiving from '@/assets/uptown-living.jpg';
 import uptownBedroom1 from '@/assets/uptown-bedroom-1.jpg';
 import uptownBedroom2 from '@/assets/uptown-bedroom-2.jpg';
+import uptownKitchen4 from '@/assets/uptown-kitchen-4.jpg';
+import uptownKitchen5 from '@/assets/uptown-kitchen-5.jpg';
+import uptownKitchen6 from '@/assets/uptown-kitchen-6.jpg';
+import uptownLiving2 from '@/assets/uptown-living-2.jpg';
+import uptownLiving3 from '@/assets/uptown-living-3.jpg';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -416,10 +421,15 @@ const projects = [
     tags: ['Modern', 'Minimalist', 'Contemporary'],
     gallery: [
       uptownLiving,
+      uptownLiving2,
+      uptownLiving3,
       uptownDining,
       uptownKitchen1,
       uptownKitchen2,
       uptownKitchen3,
+      uptownKitchen4,
+      uptownKitchen5,
+      uptownKitchen6,
       uptownBedroom1,
       uptownBedroom2,
       uptownBathroom,
