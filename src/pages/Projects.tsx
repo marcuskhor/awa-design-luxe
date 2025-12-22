@@ -171,6 +171,15 @@ import serene1Hallway2 from '@/assets/serene1-hallway-2.jpg';
 import serene1Bathroom2 from '@/assets/serene1-bathroom-2.jpg';
 import serene1Bathroom3 from '@/assets/serene1-bathroom-3.jpg';
 import serene1Bathroom4 from '@/assets/serene1-bathroom-4.jpg';
+import sv2Bedroom1 from '@/assets/sv2-bedroom-1.png';
+import sv2Bedroom2 from '@/assets/sv2-bedroom-2.png';
+import sv2Liv2 from '@/assets/sv2-liv-2.png';
+import sv2Kitchen from '@/assets/sv2-kitchen.png';
+import sv2Liv3 from '@/assets/sv2-liv-3.png';
+import sv2Foyer from '@/assets/sv2-foyer.png';
+import sv2Liv4 from '@/assets/sv2-liv-4.png';
+import sv2Bedroom3 from '@/assets/sv2-bedroom-3.png';
+import sv2Study from '@/assets/sv2-study.png';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -542,6 +551,26 @@ const projects = [
       serene1Bathroom2,
       serene1Bathroom3,
       serene1Bathroom4,
+    ],
+  },
+  {
+    id: 18,
+    title: 'SUNWAY SERENE 2',
+    category: 'Residential',
+    location: 'Petaling Jaya',
+    year: '2024',
+    description: 'Modern apartment renovation featuring contemporary design with marble TV feature wall, custom cabinetry, and cohesive blue accent theme throughout.',
+    image: sv2Liv2,
+    gallery: [
+      sv2Liv2,
+      sv2Liv3,
+      sv2Liv4,
+      sv2Kitchen,
+      sv2Foyer,
+      sv2Bedroom1,
+      sv2Bedroom2,
+      sv2Bedroom3,
+      sv2Study,
     ],
   },
 ];
