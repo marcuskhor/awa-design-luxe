@@ -152,6 +152,16 @@ import serene1TvWall from '@/assets/serene1-tv-wall.jpg';
 import serene1Dining4 from '@/assets/serene1-dining-4.jpg';
 import serene1Dining5 from '@/assets/serene1-dining-5.jpg';
 import serene1Hallway from '@/assets/serene1-hallway.jpg';
+import serene1Wardrobe3 from '@/assets/serene1-wardrobe-3.jpg';
+import serene1Island from '@/assets/serene1-island.jpg';
+import serene1Display2 from '@/assets/serene1-display-2.jpg';
+import serene1Utility from '@/assets/serene1-utility.jpg';
+import serene1Kitchen8 from '@/assets/serene1-kitchen-8.jpg';
+import serene1Kitchen9 from '@/assets/serene1-kitchen-9.jpg';
+import serene1DryKitchen from '@/assets/serene1-dry-kitchen.jpg';
+import serene1Living4 from '@/assets/serene1-living-4.jpg';
+import serene1Study from '@/assets/serene1-study.jpg';
+import serene1TvWall2 from '@/assets/serene1-tv-wall-2.jpg';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -504,6 +514,16 @@ const projects = [
       serene1Dining4,
       serene1Dining5,
       serene1Hallway,
+      serene1Wardrobe3,
+      serene1Island,
+      serene1Display2,
+      serene1Utility,
+      serene1Kitchen8,
+      serene1Kitchen9,
+      serene1DryKitchen,
+      serene1Living4,
+      serene1Study,
+      serene1TvWall2,
     ],
   },
 ];
