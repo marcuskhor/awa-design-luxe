@@ -124,6 +124,16 @@ import uptownKitchen5 from '@/assets/uptown-kitchen-5.jpg';
 import uptownKitchen6 from '@/assets/uptown-kitchen-6.jpg';
 import uptownLiving2 from '@/assets/uptown-living-2.jpg';
 import uptownLiving3 from '@/assets/uptown-living-3.jpg';
+import serene1Dining from '@/assets/serene1-dining.jpg';
+import serene1Laundry from '@/assets/serene1-laundry.jpg';
+import serene1Bathroom from '@/assets/serene1-bathroom.jpg';
+import serene1Kitchen from '@/assets/serene1-kitchen.jpg';
+import serene1Bedroom1 from '@/assets/serene1-bedroom-1.jpg';
+import serene1Bookshelf from '@/assets/serene1-bookshelf.jpg';
+import serene1Bedroom2 from '@/assets/serene1-bedroom-2.jpg';
+import serene1Kids from '@/assets/serene1-kids.jpg';
+import serene1Wardrobe from '@/assets/serene1-wardrobe.jpg';
+import serene1Kitchen2 from '@/assets/serene1-kitchen-2.jpg';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -435,6 +445,29 @@ const projects = [
       uptownBathroom,
       uptownHallway1,
       uptownHallway2,
+    ],
+  },
+  {
+    id: 16,
+    title: 'Sunway Serene 1',
+    category: 'Residential',
+    location: 'Petaling Jaya, Malaysia',
+    year: '2024',
+    area: '1,600 sq ft',
+    image: serene1Dining,
+    description: 'Elegant residential design featuring classic wainscoting dining area, luxurious bathroom with bathtub, custom bookshelf wall unit, modern kitchen with built-in appliances, and charming kids bedroom.',
+    tags: ['Elegant', 'Classic', 'Modern'],
+    gallery: [
+      serene1Dining,
+      serene1Bathroom,
+      serene1Kitchen,
+      serene1Kitchen2,
+      serene1Bookshelf,
+      serene1Bedroom1,
+      serene1Bedroom2,
+      serene1Kids,
+      serene1Wardrobe,
+      serene1Laundry,
     ],
   },
 ];
