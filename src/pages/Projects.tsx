@@ -109,6 +109,16 @@ import spKitchen2 from '@/assets/sp-kitchen-2.jpg';
 import dutaParkDining from '@/assets/duta-park-dining.png';
 import dutaParkLiving from '@/assets/duta-park-living.png';
 import dutaParkBedroom from '@/assets/duta-park-bedroom.jpg';
+import uptownKitchen1 from '@/assets/uptown-kitchen-1.jpg';
+import uptownKitchen2 from '@/assets/uptown-kitchen-2.jpg';
+import uptownKitchen3 from '@/assets/uptown-kitchen-3.jpg';
+import uptownBathroom from '@/assets/uptown-bathroom.jpg';
+import uptownHallway1 from '@/assets/uptown-hallway-1.jpg';
+import uptownDining from '@/assets/uptown-dining.jpg';
+import uptownHallway2 from '@/assets/uptown-hallway-2.jpg';
+import uptownLiving from '@/assets/uptown-living.jpg';
+import uptownBedroom1 from '@/assets/uptown-bedroom-1.jpg';
+import uptownBedroom2 from '@/assets/uptown-bedroom-2.jpg';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -392,6 +402,29 @@ const projects = [
       dutaParkLiving,
       dutaParkDining,
       dutaParkBedroom,
+    ],
+  },
+  {
+    id: 15,
+    title: 'UPTOWN RESIDENCE',
+    category: 'Residential',
+    location: 'Malaysia',
+    year: '2024',
+    area: '1,100 sq ft',
+    image: uptownLiving,
+    description: 'Modern residential interior featuring contemporary kitchen with grey cabinetry, elegant living spaces, stylish dining area, and comfortable bedrooms with natural lighting.',
+    tags: ['Modern', 'Minimalist', 'Contemporary'],
+    gallery: [
+      uptownLiving,
+      uptownDining,
+      uptownKitchen1,
+      uptownKitchen2,
+      uptownKitchen3,
+      uptownBedroom1,
+      uptownBedroom2,
+      uptownBathroom,
+      uptownHallway1,
+      uptownHallway2,
     ],
   },
 ];
