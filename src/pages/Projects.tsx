@@ -180,6 +180,16 @@ import sv2Foyer from '@/assets/sv2-foyer.png';
 import sv2Liv4 from '@/assets/sv2-liv-4.png';
 import sv2Bedroom3 from '@/assets/sv2-bedroom-3.png';
 import sv2Study from '@/assets/sv2-study.png';
+import sv2Kitchen2 from '@/assets/sv2-kitchen-2.png';
+import sv2Liv5 from '@/assets/sv2-liv-5.png';
+import sv2Foyer2 from '@/assets/sv2-foyer-2.png';
+import sv2Kitchen3 from '@/assets/sv2-kitchen-3.png';
+import sv2Foyer3 from '@/assets/sv2-foyer-3.png';
+import sv2Kitchen4 from '@/assets/sv2-kitchen-4.png';
+import sv2Liv6 from '@/assets/sv2-liv-6.png';
+import sv2Bedroom4 from '@/assets/sv2-bedroom-4.png';
+import sv2Study2 from '@/assets/sv2-study-2.png';
+import sv2Hallway from '@/assets/sv2-hallway.png';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -573,6 +583,16 @@ const projects = [
       sv2Bedroom2,
       sv2Bedroom3,
       sv2Study,
+      sv2Kitchen2,
+      sv2Liv5,
+      sv2Foyer2,
+      sv2Kitchen3,
+      sv2Foyer3,
+      sv2Kitchen4,
+      sv2Liv6,
+      sv2Bedroom4,
+      sv2Study2,
+      sv2Hallway,
     ],
   },
 ];
