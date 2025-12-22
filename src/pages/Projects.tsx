@@ -190,6 +190,9 @@ import sv2Liv6 from '@/assets/sv2-liv-6.png';
 import sv2Bedroom4 from '@/assets/sv2-bedroom-4.png';
 import sv2Study2 from '@/assets/sv2-study-2.png';
 import sv2Hallway from '@/assets/sv2-hallway.png';
+import sv2Liv7 from '@/assets/sv2-liv-7.png';
+import sv2Liv8 from '@/assets/sv2-liv-8.png';
+import sv2Foyer4 from '@/assets/sv2-foyer-4.png';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -593,6 +596,9 @@ const projects = [
       sv2Bedroom4,
       sv2Study2,
       sv2Hallway,
+      sv2Liv7,
+      sv2Liv8,
+      sv2Foyer4,
     ],
   },
 ];
