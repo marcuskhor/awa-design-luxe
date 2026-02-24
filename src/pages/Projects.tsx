@@ -193,6 +193,19 @@ import sv2Hallway from '@/assets/sv2-hallway.png';
 import sv2Liv7 from '@/assets/sv2-liv-7.png';
 import sv2Liv8 from '@/assets/sv2-liv-8.png';
 import sv2Foyer4 from '@/assets/sv2-foyer-4.png';
+import artessaFoyer from '@/assets/artessa-foyer.jpg';
+import artessaLiving1 from '@/assets/artessa-living-1.jpg';
+import artessaLiving2 from '@/assets/artessa-living-2.jpg';
+import artessaDining from '@/assets/artessa-dining.jpg';
+import artessaKitchen1 from '@/assets/artessa-kitchen-1.jpg';
+import artessaKitchen2 from '@/assets/artessa-kitchen-2.jpg';
+import artessaMaster from '@/assets/artessa-master.jpg';
+import artessaCloset1 from '@/assets/artessa-closet-1.jpg';
+import artessaCloset2 from '@/assets/artessa-closet-2.jpg';
+import artessaCloset3 from '@/assets/artessa-closet-3.jpg';
+import artessaBedroom2 from '@/assets/artessa-bedroom-2.jpg';
+import artessaBedroom3 from '@/assets/artessa-bedroom-3.jpg';
+import artessaBathroom from '@/assets/artessa-bathroom.jpg';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -599,6 +612,32 @@ const projects = [
       sv2Liv7,
       sv2Liv8,
       sv2Foyer4,
+    ],
+  },
+  {
+    id: 14,
+    title: 'SUNWAY ARTESSA',
+    category: 'Residential',
+    location: 'Sunway',
+    year: '2025',
+    area: '1,500 sq ft',
+    image: artessaLiving1,
+    description: 'Elegant residential design at Sunway Artessa featuring a welcoming foyer, spacious living and dining areas, modern kitchen, luxurious master bedroom with walk-in closet, and refined bathrooms.',
+    tags: ['Modern', 'Elegant', 'Luxury'],
+    gallery: [
+      artessaFoyer,
+      artessaLiving1,
+      artessaLiving2,
+      artessaDining,
+      artessaKitchen1,
+      artessaKitchen2,
+      artessaMaster,
+      artessaCloset1,
+      artessaCloset2,
+      artessaCloset3,
+      artessaBedroom2,
+      artessaBedroom3,
+      artessaBathroom,
     ],
   },
 ];
