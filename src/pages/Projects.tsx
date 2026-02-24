@@ -223,6 +223,16 @@ import uptown2Bedroom21 from '@/assets/uptown2-bedroom2-1.jpg';
 import uptown2Bedroom22 from '@/assets/uptown2-bedroom2-2.jpg';
 import uptown2Bedroom31 from '@/assets/uptown2-bedroom3-1.jpg';
 import uptown2Bedroom32 from '@/assets/uptown2-bedroom3-2.jpg';
+import zenCafeInterior1 from '@/assets/zen-cafe-interior-1.jpg';
+import zenCafeCounter from '@/assets/zen-cafe-counter.jpg';
+import zenCafeTatami1 from '@/assets/zen-cafe-tatami-1.jpg';
+import zenCafeTatami2 from '@/assets/zen-cafe-tatami-2.jpg';
+import zenCafeGarden1 from '@/assets/zen-cafe-garden-1.jpg';
+import zenCafeGardenDay from '@/assets/zen-cafe-garden-day.jpg';
+import zenCafeGardenNight from '@/assets/zen-cafe-garden-night.jpg';
+import zenCafeDining from '@/assets/zen-cafe-dining.jpg';
+import zenCafeExteriorDay from '@/assets/zen-cafe-exterior-day.jpg';
+import zenCafeExteriorNight from '@/assets/zen-cafe-exterior-night.jpg';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -685,6 +695,29 @@ const projects = [
       uptown2Bedroom22,
       uptown2Bedroom31,
       uptown2Bedroom32,
+    ],
+  },
+  {
+    id: 20,
+    title: 'TEMPLE ZEN CAFE',
+    category: 'Residential',
+    location: 'Malaysia',
+    year: '2025',
+    area: '2,000 sq ft',
+    image: zenCafeInterior1,
+    description: 'A serene zen-inspired cafe design featuring tatami seating areas, traditional Japanese elements, lush garden courtyard with stone pathways, and elegant indoor-outdoor dining spaces.',
+    tags: ['Zen', 'Japanese', 'Cafe'],
+    gallery: [
+      zenCafeInterior1,
+      zenCafeCounter,
+      zenCafeTatami1,
+      zenCafeTatami2,
+      zenCafeGarden1,
+      zenCafeGardenDay,
+      zenCafeGardenNight,
+      zenCafeDining,
+      zenCafeExteriorDay,
+      zenCafeExteriorNight,
     ],
   },
 ];
