@@ -206,6 +206,23 @@ import artessaCloset3 from '@/assets/artessa-closet-3.jpg';
 import artessaBedroom2 from '@/assets/artessa-bedroom-2.jpg';
 import artessaBedroom3 from '@/assets/artessa-bedroom-3.jpg';
 import artessaBathroom from '@/assets/artessa-bathroom.jpg';
+import uptown2Living from '@/assets/uptown2-living.jpg';
+import uptown2Dining from '@/assets/uptown2-dining.jpg';
+import uptown2DryKitchen from '@/assets/uptown2-dry-kitchen.jpg';
+import uptown2Kitchen1 from '@/assets/uptown2-kitchen-1.jpg';
+import uptown2Kitchen2 from '@/assets/uptown2-kitchen-2.jpg';
+import uptown2WetKitchen1 from '@/assets/uptown2-wet-kitchen-1.jpg';
+import uptown2WetKitchen2 from '@/assets/uptown2-wet-kitchen-2.jpg';
+import uptown2Study from '@/assets/uptown2-study.jpg';
+import uptown2Master from '@/assets/uptown2-master.jpg';
+import uptown2Wardrobe1 from '@/assets/uptown2-wardrobe-1.jpg';
+import uptown2Wardrobe2 from '@/assets/uptown2-wardrobe-2.jpg';
+import uptown2Wardrobe3 from '@/assets/uptown2-wardrobe-3.jpg';
+import uptown2Bathroom from '@/assets/uptown2-bathroom.jpg';
+import uptown2Bedroom21 from '@/assets/uptown2-bedroom2-1.jpg';
+import uptown2Bedroom22 from '@/assets/uptown2-bedroom2-2.jpg';
+import uptown2Bedroom31 from '@/assets/uptown2-bedroom3-1.jpg';
+import uptown2Bedroom32 from '@/assets/uptown2-bedroom3-2.jpg';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -441,7 +458,7 @@ const projects = [
   },
   {
     id: 12,
-    title: 'Sunway Velocity 2',
+    title: 'SUNWAY VELOCITY 2',
     category: 'Residential',
     location: 'Kuala Lumpur, Malaysia',
     year: '2025',
@@ -521,7 +538,7 @@ const projects = [
   },
   {
     id: 16,
-    title: 'Sunway Serene 1',
+    title: 'SUNWAY SERENE 1',
     category: 'Residential',
     location: 'Petaling Jaya, Malaysia',
     year: '2024',
@@ -638,6 +655,36 @@ const projects = [
       artessaBedroom2,
       artessaBedroom3,
       artessaBathroom,
+    ],
+  },
+  {
+    id: 19,
+    title: 'UPTOWN RESIDENCE 2',
+    category: 'Residential',
+    location: 'Malaysia',
+    year: '2025',
+    area: '1,400 sq ft',
+    image: uptown2Living,
+    description: 'Modern residential design at Uptown Residences featuring spacious living areas, dry and wet kitchens, study area, luxurious master suite with walk-in wardrobe, and elegant bedrooms.',
+    tags: ['Modern', 'Contemporary', 'Luxury'],
+    gallery: [
+      uptown2Living,
+      uptown2Dining,
+      uptown2DryKitchen,
+      uptown2Kitchen1,
+      uptown2Kitchen2,
+      uptown2WetKitchen1,
+      uptown2WetKitchen2,
+      uptown2Study,
+      uptown2Master,
+      uptown2Wardrobe1,
+      uptown2Wardrobe2,
+      uptown2Wardrobe3,
+      uptown2Bathroom,
+      uptown2Bedroom21,
+      uptown2Bedroom22,
+      uptown2Bedroom31,
+      uptown2Bedroom32,
     ],
   },
 ];
