@@ -237,6 +237,13 @@ import sv2Liv9 from '@/assets/sv2-liv-9.png';
 import sv2Liv10 from '@/assets/sv2-liv-10.png';
 import sv2Mb2 from '@/assets/sv2-mb-2.png';
 import sv2Bedroom5 from '@/assets/sv2-bedroom-5.png';
+import quillLiving1 from '@/assets/quill-living-1.jpg';
+import quillLiving2 from '@/assets/quill-living-2.jpg';
+import quillLiving3 from '@/assets/quill-living-3.jpg';
+import quillLiving4 from '@/assets/quill-living-4.jpg';
+import quillLiving5 from '@/assets/quill-living-5.jpg';
+import quillLiving6 from '@/assets/quill-living-6.jpg';
+import quillBedroom from '@/assets/quill-bedroom.jpg';
 
 const categories = ['All', 'Residential', 'Office'];
 
