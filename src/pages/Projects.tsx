@@ -748,6 +748,26 @@ const projects = [
       sv2Bedroom5,
     ],
   },
+  {
+    id: 22,
+    title: 'QUILL RESIDENCE',
+    category: 'Residential',
+    location: 'Kuala Lumpur, Malaysia',
+    year: '2025',
+    area: '600 sq ft',
+    image: quillLiving1,
+    description: 'Industrial-chic studio residence featuring cement-rendered walls, warm walnut cabinetry, open-plan living with kitchen island bar, and a cozy bedroom with wood panel accents.',
+    tags: ['Industrial', 'Modern', 'Studio'],
+    gallery: [
+      quillLiving1,
+      quillLiving2,
+      quillLiving3,
+      quillLiving4,
+      quillLiving5,
+      quillBedroom,
+      quillLiving6,
+    ],
+  },
 ];
 
 const Projects = () => {
