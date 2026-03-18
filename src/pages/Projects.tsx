@@ -720,6 +720,23 @@ const projects = [
       zenCafeExteriorNight,
     ],
   },
+  {
+    id: 21,
+    title: 'SUNWAY VELOCITY 2',
+    category: 'Residential',
+    location: 'Kuala Lumpur, Malaysia',
+    year: '2025',
+    area: '900 sq ft',
+    image: sv2Liv9,
+    description: 'Contemporary residential design featuring modern living spaces with marble dining table, stylish TV wall with fluted panels, elegant master bedroom, and cozy second bedroom.',
+    tags: ['Modern', 'Contemporary', 'Minimalist'],
+    gallery: [
+      sv2Liv9,
+      sv2Liv10,
+      sv2Mb2,
+      sv2Bedroom5,
+    ],
+  },
 ];
 
 const Projects = () => {
