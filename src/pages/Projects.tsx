@@ -233,6 +233,10 @@ import zenCafeGardenNight from '@/assets/zen-cafe-garden-night.jpg';
 import zenCafeDining from '@/assets/zen-cafe-dining.jpg';
 import zenCafeExteriorDay from '@/assets/zen-cafe-exterior-day.jpg';
 import zenCafeExteriorNight from '@/assets/zen-cafe-exterior-night.jpg';
+import sv2Liv9 from '@/assets/sv2-liv-9.png';
+import sv2Liv10 from '@/assets/sv2-liv-10.png';
+import sv2Mb2 from '@/assets/sv2-mb-2.png';
+import sv2Bedroom5 from '@/assets/sv2-bedroom-5.png';
 
 const categories = ['All', 'Residential', 'Office'];
 
