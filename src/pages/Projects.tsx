@@ -520,7 +520,7 @@ const projects = [
   },
   {
     id: 15,
-    title: 'UPTOWN RESIDENCE',
+    title: 'DUTA PARK RESIDENCE',
     category: 'Residential',
     location: 'Malaysia',
     year: '2024',
