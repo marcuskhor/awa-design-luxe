@@ -548,7 +548,7 @@ const projects = [
   },
   {
     id: 16,
-    title: 'SUNWAY SERENE 1',
+    title: 'SUNWAY SERENE',
     category: 'Residential',
     location: 'Petaling Jaya, Malaysia',
     year: '2024',
