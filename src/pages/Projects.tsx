@@ -233,6 +233,10 @@ import zenCafeGardenNight from '@/assets/zen-cafe-garden-night.jpg';
 import zenCafeDining from '@/assets/zen-cafe-dining.jpg';
 import zenCafeExteriorDay from '@/assets/zen-cafe-exterior-day.jpg';
 import zenCafeExteriorNight from '@/assets/zen-cafe-exterior-night.jpg';
+import sv2Liv9 from '@/assets/sv2-liv-9.png';
+import sv2Liv10 from '@/assets/sv2-liv-10.png';
+import sv2Mb2 from '@/assets/sv2-mb-2.png';
+import sv2Bedroom5 from '@/assets/sv2-bedroom-5.png';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -718,6 +722,23 @@ const projects = [
       zenCafeDining,
       zenCafeExteriorDay,
       zenCafeExteriorNight,
+    ],
+  },
+  {
+    id: 21,
+    title: 'SUNWAY VELOCITY 2',
+    category: 'Residential',
+    location: 'Kuala Lumpur, Malaysia',
+    year: '2025',
+    area: '900 sq ft',
+    image: sv2Liv9,
+    description: 'Contemporary residential design featuring modern living spaces with marble dining table, stylish TV wall with fluted panels, elegant master bedroom, and cozy second bedroom.',
+    tags: ['Modern', 'Contemporary', 'Minimalist'],
+    gallery: [
+      sv2Liv9,
+      sv2Liv10,
+      sv2Mb2,
+      sv2Bedroom5,
     ],
   },
 ];
