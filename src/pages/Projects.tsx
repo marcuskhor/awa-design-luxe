@@ -669,7 +669,7 @@ const projects = [
   },
   {
     id: 19,
-    title: 'UPTOWN RESIDENCE 2',
+    title: 'UPTOWN RESIDENCE',
     category: 'Residential',
     location: 'Malaysia',
     year: '2025',
