@@ -258,6 +258,24 @@ import palmaSands11 from '@/assets/palma-sands-11.png';
 import palmaSands12 from '@/assets/palma-sands-12.png';
 import palmaSands13 from '@/assets/palma-sands-13.png';
 import palmaSands14 from '@/assets/palma-sands-14.png';
+import rimbayu1 from '@/assets/rimbayu-1.png';
+import rimbayu2 from '@/assets/rimbayu-2.png';
+import rimbayu3 from '@/assets/rimbayu-3.png';
+import rimbayu4 from '@/assets/rimbayu-4.png';
+import rimbayu5 from '@/assets/rimbayu-5.png';
+import rimbayu6 from '@/assets/rimbayu-6.png';
+import rimbayu7 from '@/assets/rimbayu-7.png';
+import rimbayu8 from '@/assets/rimbayu-8.png';
+import rimbayu9 from '@/assets/rimbayu-9.png';
+import rimbayu10 from '@/assets/rimbayu-10.png';
+import rimbayu11 from '@/assets/rimbayu-11.png';
+import rimbayu12 from '@/assets/rimbayu-12.png';
+import rimbayu13 from '@/assets/rimbayu-13.png';
+import rimbayu14 from '@/assets/rimbayu-14.png';
+import rimbayu15 from '@/assets/rimbayu-15.png';
+import rimbayu16 from '@/assets/rimbayu-16.png';
+import rimbayu17 from '@/assets/rimbayu-17.png';
+import rimbayu18 from '@/assets/rimbayu-18.png';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -796,6 +814,22 @@ const projects = [
       palmaSands1, palmaSands2, palmaSands3, palmaSands4, palmaSands5,
       palmaSands6, palmaSands7, palmaSands8, palmaSands9, palmaSands10,
       palmaSands11, palmaSands12, palmaSands13, palmaSands14,
+    ],
+  },
+  {
+    id: 25,
+    title: 'RIMBAYU',
+    category: 'Residential',
+    location: 'Malaysia',
+    year: '2026',
+    area: 'Landed Property',
+    image: rimbayu1,
+    description: 'Minimalist landed property design featuring clean lines, neutral palettes, and serene, light-filled living spaces.',
+    tags: ['Minimalist', 'Modern', 'Landed'],
+    gallery: [
+      rimbayu1, rimbayu2, rimbayu3, rimbayu4, rimbayu5, rimbayu6,
+      rimbayu7, rimbayu8, rimbayu9, rimbayu10, rimbayu11, rimbayu12,
+      rimbayu13, rimbayu14, rimbayu15, rimbayu16, rimbayu17, rimbayu18,
     ],
   },
 ];
