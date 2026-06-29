@@ -276,6 +276,20 @@ import rimbayu15 from '@/assets/rimbayu-15.png';
 import rimbayu16 from '@/assets/rimbayu-16.png';
 import rimbayu17 from '@/assets/rimbayu-17.png';
 import rimbayu18 from '@/assets/rimbayu-18.png';
+import ttdi1 from '@/assets/ttdi-1.png';
+import ttdi2 from '@/assets/ttdi-2.png';
+import ttdi3 from '@/assets/ttdi-3.png';
+import ttdi4 from '@/assets/ttdi-4.png';
+import ttdi5 from '@/assets/ttdi-5.png';
+import ttdi6 from '@/assets/ttdi-6.png';
+import ttdi7 from '@/assets/ttdi-7.png';
+import ttdi8 from '@/assets/ttdi-8.png';
+import ttdi9 from '@/assets/ttdi-9.png';
+import ttdi10 from '@/assets/ttdi-10.png';
+import ttdi11 from '@/assets/ttdi-11.png';
+import ttdi12 from '@/assets/ttdi-12.png';
+import ttdi13 from '@/assets/ttdi-13.png';
+import ttdi14 from '@/assets/ttdi-14.png';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -830,6 +844,21 @@ const projects = [
       rimbayu1, rimbayu2, rimbayu3, rimbayu4, rimbayu5, rimbayu6,
       rimbayu7, rimbayu8, rimbayu9, rimbayu10, rimbayu11, rimbayu12,
       rimbayu13, rimbayu14, rimbayu15, rimbayu16, rimbayu17, rimbayu18,
+    ],
+  },
+  {
+    id: 26,
+    title: 'TTDI',
+    category: 'Residential',
+    location: 'TTDI, Kuala Lumpur',
+    year: '2026',
+    area: 'Landed Property',
+    image: ttdi1,
+    description: 'Modern contemporary luxury landed property featuring sophisticated interiors, premium finishes, and elegant living spaces.',
+    tags: ['Modern', 'Contemporary', 'Luxury'],
+    gallery: [
+      ttdi1, ttdi2, ttdi3, ttdi4, ttdi5, ttdi6, ttdi7,
+      ttdi8, ttdi9, ttdi10, ttdi11, ttdi12, ttdi13, ttdi14,
     ],
   },
 ];
