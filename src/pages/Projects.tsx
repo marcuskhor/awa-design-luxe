@@ -244,6 +244,20 @@ import quillLiving4 from '@/assets/quill-living-4.jpg';
 import quillLiving5 from '@/assets/quill-living-5.jpg';
 import quillLiving6 from '@/assets/quill-living-6.jpg';
 import quillBedroom from '@/assets/quill-bedroom.jpg';
+import palmaSands1 from '@/assets/palma-sands-1.png';
+import palmaSands2 from '@/assets/palma-sands-2.png';
+import palmaSands3 from '@/assets/palma-sands-3.png';
+import palmaSands4 from '@/assets/palma-sands-4.png';
+import palmaSands5 from '@/assets/palma-sands-5.png';
+import palmaSands6 from '@/assets/palma-sands-6.png';
+import palmaSands7 from '@/assets/palma-sands-7.png';
+import palmaSands8 from '@/assets/palma-sands-8.png';
+import palmaSands9 from '@/assets/palma-sands-9.png';
+import palmaSands10 from '@/assets/palma-sands-10.png';
+import palmaSands11 from '@/assets/palma-sands-11.png';
+import palmaSands12 from '@/assets/palma-sands-12.png';
+import palmaSands13 from '@/assets/palma-sands-13.png';
+import palmaSands14 from '@/assets/palma-sands-14.png';
 
 const categories = ['All', 'Residential', 'Office'];
 
@@ -766,6 +780,22 @@ const projects = [
       quillLiving5,
       quillBedroom,
       quillLiving6,
+    ],
+  },
+  {
+    id: 24,
+    title: 'PALMA SANDS',
+    category: 'Residential',
+    location: 'Malaysia',
+    year: '2026',
+    area: 'Landed Property',
+    image: palmaSands1,
+    description: 'Scandinavian-inspired landed property design featuring warm minimalist interiors, natural wood tones, and bright, airy living spaces.',
+    tags: ['Scandinavian', 'Minimalist', 'Landed'],
+    gallery: [
+      palmaSands1, palmaSands2, palmaSands3, palmaSands4, palmaSands5,
+      palmaSands6, palmaSands7, palmaSands8, palmaSands9, palmaSands10,
+      palmaSands11, palmaSands12, palmaSands13, palmaSands14,
     ],
   },
 ];
