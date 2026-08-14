@@ -290,11 +290,40 @@ import ttdi11 from '@/assets/ttdi-11.png';
 import ttdi12 from '@/assets/ttdi-12.png';
 import ttdi13 from '@/assets/ttdi-13.png';
 import ttdi14 from '@/assets/ttdi-14.png';
+import kotaDamansara1 from '@/assets/kota-damansara-1.png.asset.json';
+import kotaDamansara2 from '@/assets/kota-damansara-2.png.asset.json';
+import kotaDamansara3 from '@/assets/kota-damansara-3.png.asset.json';
+import kotaDamansara4 from '@/assets/kota-damansara-4.png.asset.json';
+import kotaDamansara5 from '@/assets/kota-damansara-5.png.asset.json';
+import kotaDamansara6 from '@/assets/kota-damansara-6.png.asset.json';
+import kotaDamansara7 from '@/assets/kota-damansara-7.png.asset.json';
+import kotaDamansara8 from '@/assets/kota-damansara-8.png.asset.json';
+import kotaDamansara9 from '@/assets/kota-damansara-9.png.asset.json';
+import kotaDamansara10 from '@/assets/kota-damansara-10.png.asset.json';
+import kotaDamansara11 from '@/assets/kota-damansara-11.png.asset.json';
+import kotaDamansara12 from '@/assets/kota-damansara-12.png.asset.json';
+
 
 const categories = ['All', 'Residential', 'Office'];
 
 // Sample project data - in a real app, this would come from a database
 const projects = [
+  {
+    id: 27,
+    title: 'KOTA DAMANSARA LANDED',
+    category: 'Residential',
+    location: 'Kota Damansara, Selangor',
+    year: '2026',
+    area: 'Landed Property',
+    image: kotaDamansara1.url,
+    description: 'Modern landed property featuring elegant foyer, contemporary living and dining spaces, and a sleek functional kitchen with refined finishes.',
+    tags: ['Modern', 'Landed', 'Contemporary'],
+    gallery: [
+      kotaDamansara1.url, kotaDamansara2.url, kotaDamansara3.url, kotaDamansara4.url,
+      kotaDamansara5.url, kotaDamansara6.url, kotaDamansara7.url, kotaDamansara8.url,
+      kotaDamansara9.url, kotaDamansara10.url, kotaDamansara11.url, kotaDamansara12.url,
+    ],
+  },
   {
     id: 26,
     title: 'TTDI',
@@ -342,6 +371,7 @@ const projects = [
       palmaSands11, palmaSands12, palmaSands13, palmaSands14,
     ],
   },
+
   {
     id: 1,
     title: 'ARUNYA RESIDENCE',
