@@ -1,7 +1,7 @@
 // Projects page
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, MapPin, Square, X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
+import { Calendar, MapPin, Square, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
@@ -902,9 +902,13 @@ const Projects = () => {
     ? projects 
     : projects.filter(project => project.category === activeCategory);
 
+  const [cardImageIndex, setCardImageIndex] = useState<Record<number, number>>({});
+  const touchStartX = useRef(0);
+  const touchMoved = useRef(false);
+
   const openProjectGallery = (projectId: number) => {
     setSelectedProject(projectId);
-    setCurrentImageIndex(0);
+    setCurrentImageIndex(cardImageIndex[projectId] ?? 0);
   };
 
   const closeGallery = () => {
@@ -989,37 +993,82 @@ const Projects = () => {
               <ScrollAnimation key={project.id} delay={index * 100}>
                 <Card 
                   className="luxury-card group cursor-pointer overflow-hidden"
-                  onClick={() => openProjectGallery(project.id)}
+                  onClick={() => {
+                    if (touchMoved.current) return;
+                    openProjectGallery(project.id);
+                  }}
                 >
-                  <div className="relative h-64 overflow-hidden">
+                  <div
+                    className="relative h-72 md:h-80 overflow-hidden"
+                    style={{ touchAction: 'pan-y' }}
+                    onTouchStart={(e) => {
+                      touchStartX.current = e.touches[0].clientX;
+                      touchMoved.current = false;
+                    }}
+                    onTouchMove={(e) => {
+                      if (Math.abs(e.touches[0].clientX - touchStartX.current) > 12) {
+                        touchMoved.current = true;
+                      }
+                    }}
+                    onTouchEnd={(e) => {
+                      if (touchMoved.current) {
+                        const dx = e.changedTouches[0].clientX - touchStartX.current;
+                        if (Math.abs(dx) > 40) {
+                          const dir = dx < 0 ? 1 : -1;
+                          setCardImageIndex(prev => ({
+                            ...prev,
+                            [project.id]: (((prev[project.id] ?? 0) + dir) % project.gallery.length + project.gallery.length) % project.gallery.length
+                          }));
+                        }
+                      }
+                    }}
+                  >
                     <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      src={project.gallery[cardImageIndex[project.id] ?? 0] ?? project.image}
+                      alt={`${project.title} - photo ${(cardImageIndex[project.id] ?? 0) + 1}`}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 select-none"
+                      draggable={false}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-luxury-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-16 h-16 bg-primary/90 rounded-full flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform duration-300">
-                          <ImageIcon className="w-8 h-8 text-white" />
+                    {project.gallery.length > 1 && (
+                      <>
+                        <button
+                          aria-label="Previous photo"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setCardImageIndex(prev => ({
+                              ...prev,
+                              [project.id]: (((prev[project.id] ?? 0) - 1) % project.gallery.length + project.gallery.length) % project.gallery.length
+                            }));
+                          }}
+                          className="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/40 hover:bg-black/60 rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                        >
+                          <ChevronLeft className="w-5 h-5" />
+                        </button>
+                        <button
+                          aria-label="Next photo"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setCardImageIndex(prev => ({
+                              ...prev,
+                              [project.id]: ((prev[project.id] ?? 0) + 1) % project.gallery.length
+                            }));
+                          }}
+                          className="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/40 hover:bg-black/60 rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                        >
+                          <ChevronRight className="w-5 h-5" />
+                        </button>
+                        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 pointer-events-none">
+                          {project.gallery.map((_, di) => (
+                            <span
+                              key={di}
+                              className={`w-1.5 h-1.5 rounded-full transition-colors duration-200 ${
+                                di === (cardImageIndex[project.id] ?? 0) ? 'bg-primary' : 'bg-white/60'
+                              }`}
+                            />
+                          ))}
                         </div>
-                      </div>
-                    </div>
-                    <div className="absolute bottom-4 left-4 right-4 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                      <div className="flex flex-wrap gap-2 mb-2">
-                        {project.tags.map((tag, tagIndex) => (
-                          <span
-                            key={tagIndex}
-                            className="bg-primary/80 px-2 py-1 rounded-full text-xs font-medium"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                      <p className="text-sm text-white/90 flex items-center gap-1">
-                        <ImageIcon className="w-4 h-4" />
-                        {project.gallery.length} photos
-                      </p>
-                    </div>
+                      </>
+                    )}
                   </div>
                   
                   <div className="p-6">
