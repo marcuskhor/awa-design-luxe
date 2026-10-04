@@ -1,5 +1,5 @@
 // Projects page
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, MapPin, Square, X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 import { Card } from '@/components/ui/card';
@@ -902,9 +902,13 @@ const Projects = () => {
     ? projects 
     : projects.filter(project => project.category === activeCategory);
 
+  const [cardImageIndex, setCardImageIndex] = useState<Record<number, number>>({});
+  const touchStartX = useRef(0);
+  const touchMoved = useRef(false);
+
   const openProjectGallery = (projectId: number) => {
     setSelectedProject(projectId);
-    setCurrentImageIndex(0);
+    setCurrentImageIndex(cardImageIndex[projectId] ?? 0);
   };
 
   const closeGallery = () => {
