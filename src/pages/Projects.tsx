@@ -1,7 +1,7 @@
 // Projects page
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, MapPin, Square, X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
+import { Calendar, MapPin, Square, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
