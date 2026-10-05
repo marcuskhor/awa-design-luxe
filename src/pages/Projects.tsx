@@ -2,7 +2,6 @@
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Square, ChevronLeft, ChevronRight } from 'lucide-react';
-import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
@@ -965,10 +964,13 @@ const Projects = () => {
           <div className="flex flex-col gap-12">
             {filteredProjects.map((project, index) => (
               <ScrollAnimation key={project.id} delay={(index % 3) * 100}>
-                <Card className="luxury-card group overflow-hidden p-0">
-                  <div className="grid grid-cols-1 lg:grid-cols-5">
+                <div className="group">
+                  <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-14 items-center">
                     <div
-                      className="relative lg:col-span-3 h-[320px] md:h-[460px] overflow-hidden"
+                      className={`relative lg:col-span-3 h-[320px] md:h-[520px] overflow-hidden ${
+                        index % 2 === 1 ? 'lg:order-2' : ''
+                      }`}
+
                       style={{ touchAction: 'pan-y' }}
                       onTouchStart={(e) => {
                         touchStartX.current = e.touches[0].clientX;
@@ -1027,7 +1029,12 @@ const Projects = () => {
                       )}
                     </div>
 
-                    <div className="lg:col-span-2 p-8 lg:p-10 flex flex-col justify-center">
+                    <div
+                      className={`lg:col-span-2 flex flex-col justify-center ${
+                        index % 2 === 1 ? 'lg:order-1' : ''
+                      }`}
+                    >
+
                       <div className="flex items-center justify-between mb-3">
                         <span className="text-sm text-primary font-medium">{project.category}</span>
                         <span className="text-sm text-luxury-silver">{project.year}</span>
@@ -1053,7 +1060,8 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                </Card>
+                </div>
+
               </ScrollAnimation>
             ))}
           </div>
