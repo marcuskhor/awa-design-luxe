@@ -1,10 +1,9 @@
 // Projects page
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, MapPin, Square, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { MapPin, Square, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
 import Layout from '@/components/Layout';
 import ScrollAnimation from '@/components/ScrollAnimation';
 import SEO from '@/components/SEO';
@@ -895,8 +894,6 @@ const projects = [
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('All');
-  const [selectedProject, setSelectedProject] = useState<number | null>(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const filteredProjects = activeCategory === 'All' 
     ? projects 
@@ -906,35 +903,12 @@ const Projects = () => {
   const touchStartX = useRef(0);
   const touchMoved = useRef(false);
 
-  const openProjectGallery = (projectId: number) => {
-    setSelectedProject(projectId);
-    setCurrentImageIndex(cardImageIndex[projectId] ?? 0);
+  const shiftImage = (projectId: number, galleryLength: number, dir: number) => {
+    setCardImageIndex(prev => ({
+      ...prev,
+      [projectId]: (((prev[projectId] ?? 0) + dir) % galleryLength + galleryLength) % galleryLength,
+    }));
   };
-
-  const closeGallery = () => {
-    setSelectedProject(null);
-    setCurrentImageIndex(0);
-  };
-
-  const navigateImage = (direction: 'prev' | 'next') => {
-    if (selectedProject === null) return;
-    const project = projects.find(p => p.id === selectedProject);
-    if (!project) return;
-
-    if (direction === 'prev') {
-      setCurrentImageIndex(prev => 
-        prev > 0 ? prev - 1 : project.gallery.length - 1
-      );
-    } else {
-      setCurrentImageIndex(prev => 
-        prev < project.gallery.length - 1 ? prev + 1 : 0
-      );
-    }
-  };
-
-  const currentProject = selectedProject !== null 
-    ? projects.find(p => p.id === selectedProject) 
-    : null;
 
   return (
     <Layout>
